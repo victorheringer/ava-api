@@ -1,10 +1,12 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 import requests
 from bs4 import BeautifulSoup
 from scrapers import timeline, courses, dashboard, common
 from dotenv import load_dotenv
 import os
 from flask_cors import CORS
+import base64
+import json
 
 load_dotenv()
 app = Flask(__name__)
@@ -19,11 +21,13 @@ def home():
 
 @app.route('/courses')
 def fetch():
+  authString = request.args.get('token')
+  authJson = json.loads(base64.b64decode(authString))
   data = []
 
   payload = {
-    'username': os.environ.get("LOGIN"),
-    'password': os.environ.get("PASSWORD")
+    'username': authJson['username'] if authJson['username'] else os.environ.get("LOGIN"),
+    'password': authJson['password'] if authJson['password']  else os.environ.get("PASSWORD")
   }
 
   # Use 'with' to ensure the session context is closed after use.
