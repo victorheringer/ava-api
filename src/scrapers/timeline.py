@@ -58,4 +58,7 @@ def parsePanel(page):
     p['name'] = smalls[0].text.rsplit("-", 1)[0].strip()
     dummy.append(p)
 
-  return dummy
+    pageHeader = soup.find('header', attrs={'class':'page-header'})
+    headerName = pageHeader.find('h2').text.strip().replace("%", "")
+
+  return { 'name': headerName, 'panels': dummy  } 

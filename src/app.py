@@ -4,9 +4,11 @@ from bs4 import BeautifulSoup
 from scrapers import timeline, courses, dashboard, common
 from dotenv import load_dotenv
 import os
+from flask_cors import CORS
 
 load_dotenv()
 app = Flask(__name__)
+CORS(app)
 
 def link(id):
   return 'https://www.colaboraread.com.br/aluno/dashboard/index?matriculaId=' + id
@@ -36,7 +38,7 @@ def fetch():
         semesterLinks = dashboard.dashboard(s, link(courseDataSemester["$activitiesId"]))
 
         panels = timeline.panels(s, semesterLinks)
-        coursesData[indexCourse]["semesters"][indexSemester]["activities"] = panels 
+        coursesData[indexCourse]["semesters"][indexSemester]["subjects"] = panels
 
     return jsonify(coursesData)
 
