@@ -1,22 +1,38 @@
 from bs4 import BeautifulSoup
 import json
+from utils import strings
 
 """
 @page https://www.colaboraread.com.br/aluno/timeline/index
 """
 
 def panels(s, links):
-    pages = []
+  pages = []
+  dummy = []
 
-    for link in links:
-      pages.append(s.get('https://www.colaboraread.com.br' + link).text)
+  for link in links:
+    pages.append(s.get('https://www.colaboraread.com.br' + link).text)
 
-    dummy = []
+  for page in pages:
+    dummy.append(parsePanel(page))
+  
+  return dummy
 
-    for page in pages:
-      dummy.append(parsePanel(page))
-    
-    return dummy
+def handlePeriod(data):
+  date = strings.clean(data.split(":",1)[1]).split("-")
+  return { "init": strings.clean(date[0]), "final": strings.clean(date[1]) }
+
+def handleCodActivity(data):
+  return data.split(":",1)
+
+def handleCompletude(data):
+  progress = data.find("div", {"class": "progress-bar"})
+  return strings.clean(progress.text, {"%": ""})
+
+def handleActivityPoints(data):
+  gradeString = data.find("div", {"class": "progress-bar"})
+  grades = gradeString.text.strip().split("de")
+  return { "current": strings.clean(grades[0]), "total": strings.clean(grades[1]) }
 
 def parsePanel(page):
   dummy = []
@@ -34,31 +50,24 @@ def parsePanel(page):
     }
     
     for small in smalls:
-      data = small.text.strip()
+      data = strings.clean(small.text)
 
       if data.find("Período") != -1:
-        date = data.split(":",1)[1].strip().split("-")
-        p['period'] = { "init": date[0].strip(), "final": date[1].strip() }
-
+        p['period'] = handlePeriod(data)
+         
       if data.find("Cod. Atividade") != -1:
-        code = data.split(":",1)
-        p['code'] = code[1].strip()
+        p['code'] = handleCodActivity(data)
 
       if data.find("Completude") != -1:
-        completeness = small.parent
-        progress = completeness.find("div", {"class": "progress-bar"})
-        p['completeness'] = progress.text.strip().replace("%", "")
+        p['completeness'] = handleCompletude(small.parent)
 
       if data.find("Pontuação da atividade:") != -1:
-        grade = small.parent
-        gradeStrig = grade.find("div", {"class": "progress-bar"})
-        grades = gradeStrig.text.strip().split("de")
-        p['grade'] = {  "current": grades[0].strip(), "total": grades[1].strip() }
+        p['grade'] = handleActivityPoints(small.parent)
 
-    p['name'] = smalls[0].text.rsplit("-", 1)[0].strip()
+    p['name'] = strings.clean(smalls[0].text.rsplit("-", 1)[0])
     dummy.append(p)
 
     pageHeader = soup.find('header', attrs={'class':'page-header'})
-    headerName = pageHeader.find('h2').text.strip().replace("%", "")
+    headerName = strings.clean(pageHeader.find('h2').text, {"%": ""})
 
   return { 'name': headerName, 'panels': dummy  } 
