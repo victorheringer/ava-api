@@ -5,8 +5,6 @@ from scrapers import timeline, courses, dashboard, common
 from dotenv import load_dotenv
 import os
 from flask_cors import CORS
-import base64
-import json
 
 load_dotenv()
 app = Flask(__name__)
@@ -19,11 +17,10 @@ def link(id):
 def home():
   return "Ava api status: ok - Learn more about it at <a target='_blank' href='https://github.com/victorheringer/ava-api'>my github</a>"
 
-@app.route('/courses')
+@app.route('/courses', methods=['POST'])
 def fetch():
-  authString = request.args.get('token')
-  authJson = json.loads(base64.b64decode(authString))
-  data = []
+
+  authJson = request.get_json()
 
   payload = {
     'username': authJson['username'] if authJson['username'] else os.environ.get("LOGIN"),
@@ -49,7 +46,6 @@ def fetch():
 
 @app.route('/courses/lightweight')
 def lightweight():
-  data = []
 
   payload = {
     'username': os.environ.get("LOGIN"),
