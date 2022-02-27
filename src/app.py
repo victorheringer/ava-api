@@ -1,30 +1,26 @@
-from flask import Flask, jsonify, request
-import requests
-from bs4 import BeautifulSoup
-from scrapers import timeline, courses, dashboard, common
-from dotenv import load_dotenv
 import os
+import requests
+from parsers import index, dashboard, timeline
+from flask import Flask, jsonify, request
+from bs4 import BeautifulSoup
+#from scrapers import timeline, courses, dashboard, common
+from dotenv import load_dotenv
 from flask_cors import CORS
 
 load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
+'''
 def link(id):
   return 'https://www.colaboraread.com.br/aluno/dashboard/index?matriculaId=' + id
 
-@app.route('/')
-def home():
-  return "Ava api status: ok - Learn more about it at <a target='_blank' href='https://github.com/victorheringer/ava-api'>my github</a>"
-
-@app.route('/courses', methods=['POST'])
+@app.route('/courses/all', methods=['POST', 'GET'])
 def fetch():
 
-  authJson = request.get_json()
-
   payload = {
-    'username': authJson['username'] if authJson['username'] else os.environ.get("LOGIN"),
-    'password': authJson['password'] if authJson['password']  else os.environ.get("PASSWORD")
+    'username': os.environ.get("LOGIN"),
+    'password': os.environ.get("PASSWORD")
   }
 
   # Use 'with' to ensure the session context is closed after use.
@@ -42,36 +38,54 @@ def fetch():
         coursesData[indexCourse]["semesters"][indexSemester]["subjects"] = panels
 
     return jsonify(coursesData)
+'''
 
-
-@app.route('/courses/lightweight')
-def lightweight():
-
-  payload = {
-    'username': os.environ.get("LOGIN"),
-    'password': os.environ.get("PASSWORD")
-  }
-
-  # Use 'with' to ensure the session context is closed after use.
+def login(username, password):
   with requests.Session() as s:
-    s.post('https://www.colaboraread.com.br/login/authenticate', data=payload)
+    s.post('https://www.colaboraread.com.br/login/authenticate', data={'username': username, 'password': password})
+    return s
 
-    page = s.get('https://www.colaboraread.com.br/index/index')
-    coursesData = courses.courses(page)
-    activitiesList = []
+@app.route('/')
+def home():
+  return "Ava api status: ok - Learn more about it at <a target='_blank' href='https://github.com/victorheringer/ava-api'>my github</a>"
 
-    for indexCourse, courseData in enumerate(coursesData):
-      for indexSemester, courseDataSemester in enumerate(courseData["semesters"]):
+@app.route('/index/courses')
+def getCourses():
+
+  session = login(os.environ.get("LOGIN"), os.environ.get("PASSWORD"))
+  page = session.get('https://www.colaboraread.com.br/index/index')
+
+  return jsonify(index.courses(page.text))
+
+@app.route('/dashboard/subjects/<matriculation_id>')
+def getSemester(matriculation_id=''):
+  
+  session = login(os.environ.get("LOGIN"), os.environ.get("PASSWORD"))
+  page = session.get('https://www.colaboraread.com.br/aluno/dashboard/index?matriculaId='+matriculation_id)
+  subjects = dashboard.subjects(page.text)
+
+  result = []
+  
+  for subject in subjects:
+    if(subject["report_card_id"] != ''):
+      page = session.get('https://www.colaboraread.com.br/aluno/dashboard/listAtividades?id='+matriculation_id+'&boletimId='+subject["report_card_id"])
+      subject['activities'] = dashboard.activities(page.text)
+      result.append(subject)
+    else:
+      result.append(subject)
     
-        reportCard = s.get(link(courseDataSemester['$activitiesId']))
-        pageReportCard = BeautifulSoup(reportCard.text, 'html.parser')
-        reportCardIds = common.getReportCardId(pageReportCard)
-        coursesData[indexCourse]["semesters"][indexSemester]["$activitiesTemplate"] = []
+  return jsonify(result)
 
-        for reportCardId in reportCardIds:
-          courseDataSemesterId = courseDataSemester['$activitiesId']
-          res = s.get('https://www.colaboraread.com.br/aluno/dashboard/listAtividades?id={id}&boletimId={reportId}'.format(id=courseDataSemesterId,reportId=reportCardId))
-          coursesData[indexCourse]["semesters"][indexSemester]["$reportId"] = reportCardId
-          coursesData[indexCourse]["semesters"][indexSemester]["$activitiesTemplate"].append(res.text)
-              
-    return jsonify(coursesData)
+@app.route('/timeline/activities_panels/<matriculation_id>/<discipline_offer_id>')
+def getTimeline(matriculation_id='', discipline_offer_id=''):
+
+  session = login(os.environ.get("LOGIN"), os.environ.get("PASSWORD"))
+  page = None
+  print(discipline_offer_id)
+
+  if(discipline_offer_id != ''):
+    page = session.get('https://www.colaboraread.com.br/aluno/timeline/index/'+matriculation_id+'?ofertaDisciplinaId='+discipline_offer_id)
+  else:
+    page = session.get('https://www.colaboraread.com.br/aluno/timeline/index/'+matriculation_id)
+
+  return jsonify(timeline.activities_panels(page.text))

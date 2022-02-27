@@ -1,25 +1,44 @@
 # Ava Api
+![version](https://img.shields.io/badge/Version-0.0.1--beta-orange)
 
-Web scrapper and Api for Universidade Norte do Paraná teaching platform.
+Web scrapper and api for Universidade Norte do Paraná teaching platform Colaborar-AVA.
+This provides cohesive endpoints for accessing data from theirs system, since it
+uses server side rendering allowing to create new tools!
 
-### `POST` **Timeline**
+**Projects built using ava-api:**
 
-Returns json data about timeline.
+* [Ava Plus](https://github.com/danieltvaz/avaplus) - Mobile application for Ava.
 
-- **URL**
+## Setup
+
+Since this api uses docker, just make sure to have it and docker-compose setup,
+then copy the env file to setup your config:
 
 ```
-/timeline
+cat ./src/.samble-env > ./src/.env 
 ```
 
-- **Data Params**
+Then, just run:
+
+```
+docker-compose up
+```
+
+## Endpoints
+
+### **Courses**
+
+<details>
+<summary>POST /courses</summary>
+
+**Returns a list of courses**
+
+- **Request Body**
 
 ```json
 {
   "login": "ava-login",
   "password": "ava-password",
-  "reportId": 0,
-  "semesterId": 0
 }
 ```
 
@@ -28,35 +47,33 @@ Returns json data about timeline.
 ```json
 [
   {
-    "name": "string",
-    "code": "number",
-    "completeness": "number",
-    "period": {
-      "init": "dd/mm/yyyy",
-      "final": "dd/mm/yyyy"
-    },
-    "grade": {
-      "current": "number",
-      "total": "number"
-    }
+    "name": string,
+    "semesters": [
+      {
+        "matriculation_id": string, 
+        "semester_number": number, 
+        "semester_name": string,
+      },
+    ]
   }
 ]
 ```
+</details>
 
-### `POST` **Courses**
+### **Semester**
 
-Returns json data about a single user.
+<details>
+<summary>POST /semesters/:matriculation_id</summary>
 
-- **URL**
+**Returns all activities in a semester**
 
-```
-/courses
-```
-
-- **Data Params**
+- **Request Body**
 
 ```json
-{ "login": "ava-login", "password": "ava-password" }
+{
+  "login": "ava-login",
+  "password": "ava-password",
+}
 ```
 
 - **Code** `200`
@@ -64,42 +81,19 @@ Returns json data about a single user.
 ```json
 [
   {
-    "course": "string",
-    "semesters": [
+    "name": string,
+    "report_card_id?": string,
+    "activities?": [
       {
-        "semester": "string",
-        "grade": {
-          "status": "APROVADO | REPROVADO",
-          "current": "number",
-          "total": "number",
-          "subjects": [
-            { "current": "number", "total": "number" },
-            { "current": "number", "total": "number" }
-          ]
-        },
-        "ava": {
-          "grade": {
-            "current": "number",
-            "total": "number"
-          }
-        },
-        "activities": [
-          {
-            "name": "string",
-            "code": "number",
-            "completeness": "number",
-            "period": {
-              "init": "dd/mm/yyyy",
-              "final": "dd/mm/yyyy"
-            },
-            "grade": {
-              "current": "number",
-              "total": "number"
-            }
-          }
-        ]
+        "name": string,
+        "date": {
+          "init": string,
+          "end": string,
+        }, 
       }
     ]
   }
 ]
+      
 ```
+</details>

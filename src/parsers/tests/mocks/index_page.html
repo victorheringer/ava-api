@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 ie"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 ie"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 ie"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9 ie"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> 
+
+<html lang="en"
+      class="no-js pda"><!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Colaborar - Cursos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon-36db27c087e355dbd6ea0313764e81a4.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon-6aac205cf572d0571826d2b4b8869a42.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-touch-icon-retina-15501733a06bbcb29c1a4ed06f06b907.png">
+
+    <script type='text/javascript' charset='UTF-8'>
+        function getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length == 2) return parts.pop().split(";").shift();
+        }
+
+        window['adrum-start-time'] = new Date().getTime();
+
+        (function (config) {
+            config.appKey = 'AD-AAB-AAM-YNM';
+            config.adrumExtUrlHttp = 'http://cdn.appdynamics.com';
+            config.adrumExtUrlHttps = 'https://cdn.appdynamics.com';
+            config.beaconUrlHttp = 'http://col.eum-appdynamics.com';
+            config.beaconUrlHttps = 'https://col.eum-appdynamics.com';
+            config.xd = {enable: true};
+
+            (function (info) {
+                info.Ajax = extractUserData();
+                info.VPageView = extractUserData();
+                info.PageView = extractUserData();
+            })(config.userEventInfo || (config.userEventInfo = {}))
+        })(window['adrum-config'] || (window['adrum-config'] = {}));
+
+        function extractUserData() {
+            return {
+                userData: {
+                    colab_matricula: getCookie("colab_matricula"),
+                    colab_disciplina: getCookie("colab_disciplina"),
+                    colab_curso: getCookie("colab_curso"),
+                    colab_polo: getCookie("colab_polo")
+                }
+            };
+        }
+
+    </script>
+    <script src='//cdn.appdynamics.com/adrum/adrum-4.5.9.2098.js'></script>
+
+    <script type="text/javascript" src="/assets/jquery-c286b84ad19b425fb0ee34bb82e994d8.js" ></script>
+    <script type="text/javascript" src="/assets/modernizr-ed6559892b1388df2465eeee36c01695.js" ></script>
+    <link rel="stylesheet" href="/assets/colaborar-0ec7f191ddd4e14c446ef7c8690f24d9.css"/>
+    <link rel="stylesheet" href="/assets/magnific-popup-eabb0f354144f7b893fdbe4d3ca1bb3f.css"/>
+    <script type="text/javascript" src="/assets/colaborar-49c618c818b48371c50f0da7e71fc58a.js" ></script>
+    <script type="text/javascript" src="/assets/magnific-popup-72b8237763c0c00e073da2d261040ca1.js" ></script>
+    <script type="text/javascript" src="/assets/js-cookie-6e9eb1f53afb135aedaf90739c867738.js" ></script>
+    <script type="text/javascript" src="/assets/hotjar-d27977ade391b40ea077ca5368cd3a07.js" ></script>
+
+    
+	<meta name="layout" content="colaborar"/>
+
+</head>
+
+
+
+    <body class="image-bg-pda body-size-  pda">
+
+    <div class="off-canvas-wrap">
+        <div class="inner-wrapper">
+            <div class="navbar-header menuColaborar">
+                <a href="/index/index" class="logoPrincipal navbar-brand navbar-brand-pda hidden-xs"
+                   title="Portal Digital do Aluno">
+                    <img src='/assets/logo-azul-cursos-9e75672839098d1a009abe2e09d4548e.png' alt='Colaborar' title='Portal Digital do Aluno' class='logoCursos'>
+                    <strong class="logoTitulo">Portal Digital do Aluno</strong>
+                </a>
+                <button aria-controls="bs-navbar" aria-expanded="false" class="navbar-toggle pull-left collapsed"
+                        data-target="#bs-navbar" data-toggle="collapse" type="button">
+                    <a href="" class="logoPrincipal navbar-brand navbar-brand-pda hidden-xs hidden-sm"
+                       title="Portal Digital do Aluno">
+                        <img src="/assets/logo-azul-48356b4b0ed78b1b43adf66d7590327e.png" height="30" alt="Kroton Colaborar">
+                        <strong class="logoTitulo">Portal Digital do Aluno</strong>
+                    </a>
+                    <img src="/assets/logo-azul-48356b4b0ed78b1b43adf66d7590327e.png" alt="Colaborar"> <i
+                        class="fa fa-bars iconeMenu"></i>
+                </button>
+
+                <div class="notificacoes visible-sm visible-xs" tabindex="-1">
+                    <a href="/notificacao/index" title="Mensagem">
+                        <i class="fa fa-bell-o"></i>
+                    </a>
+
+                    
+                        <span class="sr-only">Você não possui mensagens não lidas</span>
+                    
+                </div>
+            </div>
+            <nav class="navbar-collapse collapse" id="bs-navbar" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li><a href="/index/index" title="Meus Cursos">Meus Cursos</a></li>
+                    
+                        <li role="presentation" class="dropdown">
+                            <a href="#" class="dropdown-toggle" id="drop4" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false" title="Serviços Online">Serviços Online <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+                                
+
+                                
+
+                                
+
+                                
+
+                                
+                                    <li>
+                                        <a title="Financeiro" href="#"><i
+                                                class="iconesMenu fa fa-money"></i> Financeiros</a>
+                                        <ul class="financeiroOpcoes">
+                                            <li><a href="/aluno/boleto/index" title="Boletos"><i
+                                                        class="iconesMenu fa fa-barcode"></i> Boletos</a></li>
+                                            
+                                            
+                                            <li><a href="/aluno/renegociacao/index" title="Renegociação"><i
+                                                        class="iconesMenu fa fa-dollar"></i> Renegociação</a></li>
+                                        </ul>
+                                    </li>
+                                
+
+                            
+
+                                
+                                <!-- Retiramos a lista das Roles de Alunos
+                                Para não visualizarem o item Solicitações de Serviços do menu
+                                Solicitado pela PO Camila em 12/2020
+                                Dev Team ThreadPool
+                                -->
+                                
+
+                                
+                                    <li><a href="/aluno/documentos/index" title="Documentos pendentes"><i
+                                                class="iconesMenu fa fa-folder"></i> Documentos Pendentes</a></li>
+                                
+
+                                
+                                    <li><a href="/aceite/list" title="Contratos">
+                                        <i class="iconesMenu fa fa-file"></i>Contratos</a></li>
+                                
+
+                                
+                                    
+                                
+
+                                
+
+                                
+
+                                
+
+                                
+
+                            
+                            </ul>
+                        </li>
+                    
+                    <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="drop4" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false" title="Apoio ao Estudo">Apoio ao Estudo <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+                            
+
+
+                            <li>
+                                <a href="/mensagem/index" title="Caixa de mensagens" class="contatoTutor"><i
+                                        class="iconesMenu fa fa-comments-o infinite rubberBand"></i> Caixa de mensagens</a>
+                            </li>
+
+
+                            
+
+                            
+
+                            <li>
+                                <a href="#" title="Manual">
+                                    <i class="iconesMenu fa fa-book"></i> <span>Manuais</span>
+                                </a>
+                            </li>
+                            <ul id="listaManuaisDinamico" class="manualOpcoes">
+                                <li>
+                                    <a href="" target="_blank" title="Manual Acadêmico">
+                                        <i class="iconesMenu fa fa-list-alt"></i>Manual Acadêmico
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" title="Avaliação Continuada">
+                                        <i class="iconesMenu fa fa-list-alt"></i>Manual Avaliação Continuada
+                                    </a>
+                                </li>
+                             </ul>
+                             <li>
+                                 <a href="/biblioteca/digital/" title="Biblioteca Digital">
+                                     <i class="iconesMenu fa fa-book"></i> <span>Biblioteca Digital</span>
+                                 </a>
+                             </li>
+                             <ul class="financeiroOpcoes">
+                                 
+                                     <li>
+                                         <a href="/biblioteca/digital/busca-acervo" target="_blank"
+                                            title="Sala de Leitura">
+                                             <i class="iconesMenu fa fa-file-o"></i> Sala de Leitura
+                                         </a>
+                                     </li>
+                                 
+                                 <li>
+                                     <a href="http://pgsskroton.com.br/seer" target="_blank" title="Revista Científica">
+                                         <i class="iconesMenu fa-file-text"></i>
+                                         <span>Revista Científica</span>
+                                     </a>
+                                 </li>
+                             </ul>
+                             
+                             
+                                 <li>
+                                     <a href="http://www.desafionotamaxima.com.br" target="_blank"
+                                        title="Desafio Nota Máxima">
+                                         <i class="iconesMenu fa fa-graduation-cap"></i> Desafio Nota Máxima
+                                     </a>
+                                 </li>
+                             
+                             
+                         </ul>
+                     </li>
+                     <li role="presentation" class="dropdown">
+                         <a href="#" class="dropdown-toggle" id="drop4" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false" title="Oportunidades">Oportunidades<span
+                                 class="caret"></span></a>
+                         <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+                             <li>
+                                 <a title="Canal Conecta" href="https://www.canalconecta.com.br/index?t=1">
+                                     <i class="iconesMenu fa fa-users"></i> Canal Conecta
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="http://www.amigovalepremio.com.br" target="_blank" title="Amigo Vale Prêmio"><i
+                                         class="iconesMenu fa fa-thumbs-o-up"></i>Amigo Vale Prêmio</a>
+                             </li>
+                             <li>
+                                 <a href="/curso-livre/index" title="Cursos Livres"><i
+                                         class="iconesMenu glyphicon glyphicon-book"></i> Cursos Livres</a>
+                             </li>
+
+                             
+
+                        </ul>
+                    </li>
+                    
+                    <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="drop4" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false"
+                           title="Conheça as funcionalidades do seu portal no menu Ajuda.">
+                            Ajuda
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+                            
+                                
+                                    <li>
+                                        
+                                            <a href="#" title="Assistir Vídeo" class="mfp-iframe"
+                                            data-mfp-src="https://static.colaboraread.com.br/upload/LMS/tutorial/tutorial_web_ava_colaborar/manual_colaborar_ava.html">
+                                                <i class="iconesMenu fa-file-text"></i> Assistir Vídeo
+                                            </a>
+                                        
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        
+                                            <a onclick="checkDashboard()" href="javascript:void(0);">
+                                                <i class="iconesMenu fa-globe"></i> Tour Virtual
+                                            </a>
+                                        
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        
+                                            <a href="#" title="Visualizar PDF" class="mfp-iframe"
+                                            data-mfp-src="https://static.colaboraread.com.br/upload/LMS/tutorial/K01042_Manual_Colaborar.pdf">
+                                                <i class="iconesMenu fa-file-text"></i> Visualizar PDF
+                                            </a>
+                                        
+                                    </li>
+                                
+                            
+                        </ul>
+                    </li>
+
+                    
+                    <li class="hidden-xs hidden-sm">
+                        <a href="#" class="popover-element js-notificacao-aluno link-notificacao" data-container="nav"
+                           data-toggle="popover" data-placement="bottom"
+                           data-href="/notificacao/list-unread">
+                            
+                                <i class="fa fa-bell-o" title="Você não possui notificações."><!-- icone --></i>
+                            
+
+                            
+                                <span class="sr-only">Você não possui notificações</span>
+                            
+                        </a>
+
+                    </li>
+
+
+                    
+                    
+
+                        <li class="hidden-xs hidden-sm">
+                            <a href="/mensagem/index" title="Caixa de Mensagens">
+                                <i class="fa fa-envelope-o infinite rubberBand"></i>
+                                
+                                    <span class="msg" id="message-menu-badge">99+</span>
+                                
+                            </a>
+                        </li>
+
+                    
+
+
+                    
+                    
+                        <li class="loginDetalhes dropdown hidden-xs hidden-sm" role="presentation">
+                            <a href="#" class="dropdown-toggle clearfix account-link" data-toggle="dropdown">
+                                <!-- <img src="/assets/avatar-bc560060c488bab3eab35795ecbd06a7.png" height="40" class="img-rounded imgLogin"> -->
+                                <div class='avatar-wrapper img-rounded img-login-pda'><img src="/assets/tiles/d-sm-ae3089ec364ad3c5cc9ac9c218f05584.png" id="null"/></div>
+
+                                <span class="text-right">
+                                    Daniel <span
+                                        class="caret" style="padding-top: 1px;"></span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/perfil/index" title="Acessar seu perfil"><i
+                                        class="iconesMenu fa fa-user"></i> Meu perfil</a></li>
+                                
+                                    <li>
+                                        <a href="/aluno/atualizacao-matricula/list-matricula" title="Acesse e confira seus dados"><i
+                                                class="iconesMenu fa fa-user"></i> Meus dados</a>
+                                    </li>
+                                
+                                <li><a href="/perfil/edit-password" title="Alterar seua senha"><i
+                                        class="iconesMenu fa fa-unlock-alt"></i> Alterar minha senha</a></li>
+                                
+                                
+                            </ul>
+
+                        </li>
+                    
+                    <li class="hidden-md hidden-lg"><a title="Area do Usuário" href="#"><i
+                            class="fa fa-user"></i> Area do Usuário</a></li>
+                    <li>
+                        <form action="/logout/index" method="post" Id="logoutForm" class="logout-form-pda" >
+                            <a href="#" title="Sair do sistema" class="js-security-logout"><i
+                                    class="fa fa-sign-out"></i> Sair</a>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="nav-acessibilidade hidden-xs hidden-sm">
+                <ul class="pull-left">
+                    <li><a href="#conteudo" title="Ir direto ao assunto, pressione Alt + 1." accesskey="1"
+                           tabindex="1">Saltar para o conteúdo [Alt + 1]</a></li>
+                    <li><a href="#conteudo" title="Acessar menu, pressione Alt + 2." accesskey="2"
+                           tabindex="1">Saltar para Navegação [Alt + 2]</a></li>
+                </ul>
+                
+                
+                <ul class="pull-right">
+                    <li><a href="" class="js-acessibilidade" data-type="fonte" accesskey="7" data-size="+"
+                           title="Aumentar fonte" tabindex="1">+A <span class="sr-only">Aumentar fonte</span></a></li>
+                    <li><a href="" class="js-acessibilidade" data-type="fonte" accesskey="6" data-size="-"
+                           title="Reduzir fonte" tabindex="1">-a <span class="sr-only">Reduzir fonte</span></a></li>
+                    <li><a href="/mapadosite" title="Acessar o mapa do site" accesskey="5" tabindex="1">Mapa do site</a></li>
+                    <li><a href="#" class="js-acessibilidade" data-type="contraste" accesskey="4" tabindex="1"
+                           title="Alto Contraste">Alto Contraste</a></li>
+                    <li><a href="/acessibilidade" accesskey="3" tabindex="1" title="Acessibilidade">Acessibilidade</a></li>
+                </ul>
+
+                <div style="clear:both;content:'';display: table;"></div>
+            </nav>
+
+            
+                <header class="page-header">
+                    
+                    
+                        <h2>Cursos</h2>
+                    
+                </header>
+            
+        <!--[if lt IE 8]><div class="col-md-12"><p class="alert alert-warning">Seu browser é <em>ultrapassado!</em> <a href="http://browsehappy.com/">Atualize agora mesmo</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">instale Google Chrome Frame</a> para visualizar este site.</p></div><![endif]-->
+            <noscript>
+                <div class="col-md-12"><p
+                        class="alert alert-warning"><strong>Atenção:</strong> Você deve habilitar o Javascript em seu navegador para melhor visualizar o conteudo deste site.
+                </p></div>
+            </noscript><!-- /no-js -->
+
+            <main id="conteudo">
+                
+
+<div class="container-fluid">
+	<div class="loading-spin" id="js-spinner"></div>
+	
+	
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<ul class="nav nav-tabs js-bootstrap-nav-bar hidden" id="cursosTab" role="tablist">
+							
+								<li class="navbar-link active"><a title="Área do Aluno" href="#navbar-content-aluno-cursos">Área do Aluno</a></li>
+							
+							
+							
+							
+							
+							
+						</ul>
+
+						<div class="tab-content boxCursosIndex">
+
+							
+
+								<div id="navbar-content-aluno-cursos" class="tab-pane active">
+
+									<div class="row">
+
+										
+											
+												<div class="col-md-4">
+													<div class="block cursosBox">
+														<!-- <h6 class="faculdade">UNOPAR</h6> -->
+                                                        <div class="block-title">
+                                                            <h4>
+                                                                Curso
+                                                            </h4>
+                                                        </div>
+                                                        <div class="opcoes">
+														    <h3 class="curso" title="Superior de Tecnologia em Análise e Desenvolvimento de Sistemas">Superior de Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
+                                                        </div>
+
+														<div class="divEntrar row"> <!-- BOTÃO ENTRAR -->
+															<form action="/aluno/dashboard/index" method="get" >
+																<div class="col-md-10 col-sm-10">
+																	<select class="form-control hidden" name="matriculaId" id="matriculaId">
+																		
+																			<option value="3000411703">3º Semestre</option>
+																		
+																			<option value="3000411702">2º Semestre</option>
+																		
+																			<option value="3000411701">1º Semestre</option>
+																		
+																	</select>
+																</div>
+																<div class="col-md-2 col-sm-2 text-right">
+																	<button type="submit" class="btn btn-primary entrar" title="Entrar em Superior de Tecnologia em Análise e Desenvolvimento de Sistemas">
+																		<i class="glyphicon glyphicon-log-in"></i> Entrar <br />
+																		<small>(Superior de Tecnologia em Análise e Desenvolvimento de Sistemas)</small>
+																	</button>
+																</div>
+															</form>
+														</div> <!-- FIM BOTÃO ENTRAR -->
+
+
+													</div>
+												</div>
+											
+												<div class="col-md-4">
+													<div class="block cursosBox">
+														<!-- <h6 class="faculdade">UNOPAR</h6> -->
+                                                        <div class="block-title">
+                                                            <h4>
+                                                                Curso
+                                                            </h4>
+                                                        </div>
+                                                        <div class="opcoes">
+														    <h3 class="curso" title="Superior de Tecnologia em Gestão da Produção Industrial">Superior de Tecnologia em Gestão da Produção Industrial</h3>
+                                                        </div>
+
+														<div class="divEntrar row"> <!-- BOTÃO ENTRAR -->
+															<form action="/aluno/dashboard/index" method="get" >
+																<div class="col-md-10 col-sm-10">
+																	<select class="form-control hidden" name="matriculaId" id="matriculaId">
+																		
+																			<option value="2315220004">4º Semestre</option>
+																		
+																			<option value="2315220003">3º Semestre</option>
+																		
+																			<option value="2315220002">2º Semestre</option>
+																		
+																			<option value="2315220001">1º Semestre</option>
+																		
+																	</select>
+																</div>
+																<div class="col-md-2 col-sm-2 text-right">
+																	<button type="submit" class="btn btn-primary entrar" title="Entrar em Superior de Tecnologia em Gestão da Produção Industrial">
+																		<i class="glyphicon glyphicon-log-in"></i> Entrar <br />
+																		<small>(Superior de Tecnologia em Gestão da Produção Industrial)</small>
+																	</button>
+																</div>
+															</form>
+														</div> <!-- FIM BOTÃO ENTRAR -->
+
+
+													</div>
+												</div>
+											
+										
+										
+
+												<div class="col-md-4">
+												<div class="block cursosBox">
+													<div class="block-title">
+														<h4>
+															Trilha de carreira
+														</h4>
+													</div>
+													<div class="divEntrar row"><!-- BOTÃO ENTRAR -->
+														<div class="col-md-10 col-sm-10"></div>
+														<div class="col-md-2 col-sm-2 text-right">
+															<button onclick="abrirModalTrilhaDeCarreira('3000411703,3000411702,3000411701,2315220004,2315220003,2315220002,2315220001')" class="btn btn-primary entrar" title="Entrar em trilha">
+																<i class="glyphicon glyphicon-log-in"></i> Listar<br />
+																<small>(thilha)</small>
+															</button>
+														</div>
+													</div> <!-- FIM BOTÃO ENTRAR -->
+												</div>
+											</div>
+										
+
+									</div>
+
+									
+										<div class="alert alert-info boxAlerta">
+											<p><small><strong>Negocie suas dívidas!</strong></small></p>
+											<p><small>Caro aluno! Você pode regularizar suas dívidas clicando no ícone “Renegociação”, ou ligando para 0800 773 4444 ou 3003 9344, ou <a title="Fale conosco via chat" href="https://chat.maltadigital.gl/start/30001/ead23152200">clique e fale com um dos nossos atendentes</a> no chat (disponível de 08:00 as 20:40 de segunda a sexta-feira e sábados de 08:00 as 14:20).</small></p>
+										</div>
+									
+								</div>
+
+							
+
+							
+
+							
+
+							
+
+							
+
+							
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+	<div class="modal fade immutable" data-backdrop="static" id="modalTrilhaCarreira" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg" style="max-width: 90% !important;" role="document">
+        <div class="modal-content">
+            <div class="card" style="border-top: 1px solid #e5e5e5 !important;">
+                <div class="card-block">
+                    <div class="container-fluid">
+                        <div style="border-bottom: 0px !important" class="modal-header">
+                            <h4 class="modal-title" style="text-align: center; font-weight: bold !important;">Trilha de Carreira</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="modal-body" style="padding: 20px;">
+                 <div class="container-fluid" style="height:300px; overflow-y:scroll;">
+                     <div class="row form-group">
+                         <input type="hidden" id="pessoaIdTrilhaCarreira" value="12915178">
+                         <div class="col-sm-12 col-md-12 col-xs-12 co12915178lg-12">
+                             <div id="mensagemDeCarregamentoCursosTrilha" class="col-sm-12 col-md-12 col-xs-12 col-lg-12">
+                                 <h6 class="modal-title" style="text-align: center; font-weight: bold !important;">Estamos carregando as trilhas, por favor aguarde!</h6>
+                             </div>
+                             <table id="tabelaCursoTrilha" class="table">
+                                 <tbody>
+                                 </tbody>
+                             </table>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+            <div class="modal-footer" style="padding: 10px; border-top: 1px solid white !important;">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function termoDeAceiteTrilha(ofertaId, pessoaId) {
+        limpaDadosTermoAceite()
+        $('#modalTrilhaCarreira').modal('hide')
+        $('#termoAceiteCarreira').modal('show')
+        $('#ofertaId').val(ofertaId)
+        $('#pessoaId').val(pessoaId)
+    }
+
+    function limpaDadosTermoAceite() {
+        $('#ofertaId').val('')
+        $('#pessoaId').val('')
+        $('#aceitarTermos').prop("disabled", true);
+        $('#aceiteTermoTrilha').attr("checked", false);
+    }
+
+</script>
+
+	<div class="modal fade immutable" style="overflow-y: hidden !important;" id="termoAceiteCarreira" tabindex="-1" role="dialog"  data-keyboard="false" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg" style="max-width: 90% !important;" role="document">
+        <input type="hidden" id="ofertaId" value="">
+        <input type="hidden" id="pessoaId" value="">
+        <div class="modal-content">
+            <div class="card" style="border-top: 1px solid #e5e5e5 !important;">
+                <div class="card-block">
+                    <div class="container-fluid">
+                        <div style="border-bottom: 0px !important" class="modal-header">
+                            <h4 class="modal-title"style="text-align: center; font-weight: bold !important;">Termo de Aceite – Trilhas de Carreira</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="modal-body" style="padding: 20px;">
+                 <div class="container-fluid">
+                     <div class="row form-group">
+                         <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12">
+                           
+                             <div>
+                                <ol>
+                                    <p class="text-justify">Declaro ter ciência e aceitar as condições abaixo para a realização dos conteúdos que compõe as Trilhas de Carreira, conforme a seguir:</p>
+                                    <ol>
+                                        <li class="text-justify">Os conteúdos serão ofertados de forma gratuita e extracurricular;</li>
+                                        <li class="text-justify">Os conteúdos serão disponibilizados no AVA a partir de 07/02, finalizando em 11/06, uma semana antes do final do semestre letivo do aluno. Nesta última semana estarão disponíveis apenas a emissão dos certificados;</li>
+                                        <li class="text-justify">Para ter direito à certificação dos conteúdos, o aluno deverá concluir a avaliação dos mesmos com no mínimo 60% de aproveitamento e no prazo estabelecido;</li>
+                                        <li class="text-justify">Para ter direito à certificação referente à Trilha de Carreira, o aluno deverá ter concluído, com aproveitamento de 60% das atividades avaliativas no prazo estabelecido, a totalidade dos conteúdos que compõem a respectiva Trilha;</li>
+                                        <li class="text-justify">Algumas Trilhas sofreram atualização no conteúdo e, para alunos que iniciaram essas trilhas atualizadas e não as concluíram, não haverá possibilidade de aproveitamento do conteúdo já feito, sendo necessário iniciá-las novamente, sem possibilidade de aproveitamento e/ou equivalência;</li>
+                                        <li class="text-justify">A disponibilidade de Trilhas por curso foi alterada para não haver sobreposição de conteúdo. Trilhas iniciadas que porventura tenham sido indisponibilizadas não poderão ser concluídas.</li>
+                                        <li class="text-justify">A carga horária referente aos conteúdos da Trilha de Carreira poderá ser utilizada como ACO, mediante apresentação do certificado na secretaria, limitada a 40 horas.</li>
+                                        <li class="text-justify">A carga horária referente aos conteúdos estudados na Trilha de Carreira não contabilizará pontuação para a Avaliação Continuada e não poderá ser aproveitada como disciplina regular do curso.</li>
+                                    </ol>
+                                </ol>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="row form-group">
+                         <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12">
+                             <input type="checkbox" class="form-check-input" id="aceiteTermoTrilha" name="aceiteTermoTrilha">
+                             <label class="form-check-label" for="aceiteTermoTrilha">Li e aceito os termos</label>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+            <div class="modal-footer" style="padding: 10px; border-top: 1px solid white !important;">
+                <button disabled type="button" id="aceitarTermos" onclick="salvarSolicitacaoMatriculaTrilha()" class="btn btn-success pull-left" data-dismiss="modal">Aceitar</button>
+                <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Recusar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#aceiteTermoTrilha').on('change', function(e) {
+        if (this.checked) {
+            $('#aceitarTermos').prop("disabled", false);
+        } else {
+            $('#aceitarTermos').prop("disabled", true);
+        }
+    });
+
+    function salvarSolicitacaoMatriculaTrilha() {
+        var ofertaId = $('#ofertaId').val();
+        var pessoaId = $('#pessoaId').val();
+
+        $.ajax({
+            url: hostname + 'index/salvarSolicitacaoMatriculaTrilha',
+            type: 'POST',
+            dataType: 'json',
+            async: true,
+            data: {ofertaId: ofertaId, pessoaId: pessoaId},
+            error: function() {
+                alert('Problemas ao solicitar matrícula.');
+                callback();
+            },
+            success: function(data) {
+                alert('Estamos construindo seu acesso, em instantes será liberado.');
+                $('#modalTrilhaCarreira').modal('hide');
+                reload();
+            }
+        });
+    }
+
+    function reload() {
+        document.location.reload(true);
+    }
+
+</script>
+
+
+
+
+
+	<script>
+		function verificaTabelaTrilhaCarreira() {
+		    return $('#tabelaCursoTrilha > tbody > tr').length
+		}
+
+        function abrirModalTrilhaDeCarreira(matriculaList) {
+            $('#modalTrilhaCarreira').modal('show');
+
+            if (verificaTabelaTrilhaCarreira()) {
+                return false;
+			}
+
+            $.ajax({
+                url: hostname + "index/getCursosTrilha",
+                method: "POST",
+                dataType: 'json',
+				data: { matriculaList: matriculaList },
+                success: function(result) {
+                    $('#modalTrilhaCarreira').modal('show');
+					if (result.cursosTrilhaList.length > 0) {
+					    var cursoList = result.cursosTrilhaList;
+						$(cursoList).each( function (index, cursoTrilha) {
+							//Monta linhas da trilha.
+							var elementoTr = constroiTr(cursoTrilha);
+							$('#mensagemDeCarregamentoCursosTrilha').hide();
+							$('#tabelaCursoTrilha > tbody').append(elementoTr);
+						})
+					} else {
+					    $('#mensagemDeCarregamentoCursosTrilha').html('');
+					    $('#mensagemDeCarregamentoCursosTrilha').html('<h6 class="modal-title" style="text-align: center; font-weight: bold !important;">Você não possui nenhuma trilha cadastrada!</h6>');
+					}
+
+                },
+                error: function(result){
+
+                }
+            });
+        }
+
+        function constroiTr(cursoTrilha) {
+            var matriculaGerada = matriculaFoiGerada(cursoTrilha);
+			var finalizouGeracaoMatricula = matriculaEmGeracao(cursoTrilha);
+			var pessoaId = $('#pessoaIdTrilhaCarreira').val();
+
+			var botao = matriculaGerada ?
+                '<button type="submit" class="btn btn-success" onclick="termoDeAceiteTrilha('+ cursoTrilha.OFERTAID +', '+ pessoaId +')">' +
+                	' <i class="fa fa-plus-square-o" aria-hidden="true"></i> Iniciar' +
+                '</button>'
+        		: (finalizouGeracaoMatricula ?
+					'<a class="btn btn-primary" href="/aluno/dashboard/index/'+ cursoTrilha.MATRICULA +'"><i class="fa fa-sign-in" aria-hidden="true" title="Entrar curso'+ cursoTrilha.NOMETRILHA +'"></i> Entrar </a>'
+					: 	'<button type="submit" class="btn btn-warning" onclick="reload()">' +
+                    		'<i class="fa fa-spinner" aria-hidden="true"></i> Aguardando' +
+                    	'</button>');
+
+			return "<tr>" +
+				"<td>"+ cursoTrilha.NOMETRILHA +"</td>" +
+				"<td>" + botao + "</td>" +
+			"</tr>";
+		}
+
+		function matriculaFoiGerada(cursoTrilha) {
+            return !cursoTrilha.MATRICULA && !cursoTrilha.GERACAO
+		}
+
+		function matriculaEmGeracao(cursoTrilha) {
+			return !!cursoTrilha.MATRICULA
+		}
+	</script>
+
+            </main>
+            <div id="divCookies" class="cookies">
+                 <p>
+                    Esse site utiliza cookies para oferecer uma melhor experiência de navegação,
+                    alisar como você interage em nosso site, otimizar o desempenho e personalizar o conteúdo.
+                    Ao utilizar este site, você concorda com o uso de cookies. Saiba mais em nosso <a id="portalPrivacidade" target="_blank" href="https://www.canaldatransparencia.com.br/cogna/">Portal de Privacidade</a>.
+                 </p>
+                 <button id="btnCookiesUser" class="classBtnCookies">Ok</button>
+
+               </div>
+               <script>
+               function verificaCookies() {
+
+                               if(sessionStorage.getItem("verificacookies") === null){
+                                   sessionStorage.setItem("verificacookies","false");
+                               }
+
+                               if(sessionStorage.getItem("verificacookies") === "true"){
+                                   $('#divCookies').addClass('escondeDivCookies');
+                                   $('#divCookies').removeClass('mostraDivCookies');
+                               }
+                          }
+                       $('#btnCookiesUser').on('click', function () {
+                           $('#divCookies').addClass('escondeDivCookies');
+                           $('#divCookies').removeClass('mostraDivCookies');
+                           sessionStorage.setItem("verificacookies","true");
+                       });
+
+                       window.onload = verificaCookies();
+
+
+               </script>
+
+        </div>
+
+        <!-- <footer id="footerNovo">
+                <a href="https://www.facebook.com/unoparuniversidade" target="_blank">
+                    <img src="/assets/icoFacebook-149d4a439e903c060cf3b091a35a428a.png" alt="Facebook">
+                </a>
+                <a href="https://www.youtube.com/channel/UCTziF60jYcTrxdhF39VMt6g" target="_blank">
+                    <img src="/assets/icoYoutube-feb89f52fe63e3ae0d85d41c63913dec.png" alt="Youtube">
+                </a>
+                <a href="https://twitter.com/UNOPAR_Oficial" target="_blank">
+                    <img src="/assets/icoTwitter-6b3c3e2f6b8301eaba5ad722611aafa7.png" alt="Twitter">
+                </a>
+            </footer>
+
+            <footer id="footer" class="page-footer">
+            	<h6 class="pull-left no-margin">Colaborar </h6>
+                <h6 class="copyright pull-right no-margin">&copy; 2004-2017 Unopar</h6>
+                
+            </footer> -->
+
+    </div>
+
+            <div id="js-mfp-alert" class="white-popup mfp-hide">
+        <div class="modal-header">
+            <h3 class="modal-title">Confirmar</h3>
+        </div>
+
+        <div class="modal-body">
+            <p>Deseja realmente realizar esta operação</p>
+        </div>
+
+        <div class="modal-footer">
+            <a href="#" class="btn btn-default js-mfp-dismiss" title="Cancelar">Cancelar</a>
+            <a href="#" class="btn btn-primary js-mfp-confirm" title="Confirmar">Confirmar</a>
+        </div>
+    </div>
+    
+
+    <!--[if lt IE 9]><img src="/assets/bg-449915540124d7cb95dff44784041a81.jpg" class="bg-ie"/><![endif]-->
+    <script>
+        var divContas = $('#divContas');
+
+        $('#form-alternar').submit(function (e) {
+            e.preventDefault();
+        });
+
+        function desabilitaBtnForm() {
+            $('#btn-submit-alternar').addClass('disabled');
+        }
+
+        function habilitaBtnForm() {
+            $('.js-input-username').on('click', function () {
+                $('#btn-submit-alternar').removeClass('disabled');
+            });
+        }
+
+        $('#btn-submit-alternar').on('click', function () {
+            $('#form-submit-alternar').submit();
+        });
+
+        $('#btnAlternar').on('click', function () {
+            desabilitaBtnForm();
+            var conta = $('#usernameSwitch').val();
+            limparCampoContas();
+            if (!conta.length || conta.length < 3) {
+                setTimeout(function () {
+                    aparecerCampoContas("Por favor, insira pelo menos 3 caracteres para realizar a pesquisa.", "alert-warning");
+                }, 300);
+                return;
+            }
+
+            $.ajax({
+                url: '/usuario/getContaSwitchUser',
+                type: 'GET',
+                dataType: 'json',
+                async: true,
+                data: {conta: conta},
+                error: function () {
+                    setTimeout(function () {
+                        aparecerCampoContas("Algo deu errado, tente novamente.", "alert-warning");
+                    }, 300);
+                },
+                success: function (result) {
+                    if (result.length > 0) {
+
+                        divContas.append("<h4>Contas:</h4>");
+                        for (let i = 0; i < result.length; i++) {
+                            constroiTabelaContas(result[i]);
+                        }
+                        habilitaBtnForm();
+                        divContas.attr('role', 'alert');
+                        divContas.addClass("alert");
+                        divContas.addClass("alert-success");
+                        divContas.fadeIn(450);
+                    } else {
+                        setTimeout(function () {
+                            aparecerCampoContas("Nenhuma conta encontrada.", "alert-warning");
+                        }, 300);
+                    }
+                }
+            });
+        });
+
+        function constroiTabelaContas(item) {
+            divContas.append("<li class='radio'><label for='" + item.conta + "'><input type='radio' class='js-input-username' name='username' id=" + item.conta + " value='" + item.conta + "'>" + item.conta + "</label></li>");
+        }
+
+        function aparecerCampoContas(text, classe) {
+            divContas.attr('role', 'alert');
+            divContas.addClass(classe);
+            divContas.html(text);
+            divContas.fadeIn(450);
+        }
+
+        function limparCampoContas() {
+            divContas.fadeOut(450);
+            divContas.removeClass('alert-warning');
+            divContas.removeClass('alert-success');
+            divContas.html('');
+        }
+
+        function getUsuarios(conta) {
+            console.log("OnChange");
+            if (!conta.length || conta.length < 3) return callback();
+
+        }
+    </script>
+    
+    <script >
+	$(document).ready(function() {
+		$('.tab-content .tab-pane:first, .nav-tabs .navbar-link:first').addClass('active');
+
+		popupAva();
+
+
+
+	var $btnAnteriores = $('.js-btn-anteriores');
+
+	if ( ! $btnAnteriores.find('li').length ){
+		$btnAnteriores.remove();
+	}
+
+});
+
+$('#termochk').change(function() {
+	if($(this).is(":checked")) {
+		$("#btnProsseguir").prop("disabled", false);
+	} else {
+		$("#btnProsseguir").prop("disabled", true);
+	}
+});
+
+var popupList = [];
+$('.js-popup-item').each(function(){
+	popupList.push($(this).attr('id'));
+});
+
+function popupAva() {
+	if (popupList.length > 0) {
+		$.magnificPopup.open({
+			items: {
+				src: "#" + popupList[0],
+				type: "inline"
+			},
+			closeBtnInside: false,
+			mainClass: 'mfp-inline-popup',
+			callbacks: {
+				open: function() {
+					popupList.shift();
+
+				},
+				afterClose: function() {
+					popupAva();
+				}
+			}
+		});
+	}  else {
+        var urlX = "";
+        if (urlX != '') {
+            window.location.href = window.location.protocol + "//" + window.location.host + "";
+        }
+    }
+}
+
+function janelaSecundaria(c){
+	window.open(c,"Chat","width=400,height=500,scrollbars=NO")
+}
+</script><script >
+        $(function(){
+           $('.js-mfp-ajax').magnificPopup({
+               closeOnContentClick: false,
+               removalDelay: 300,
+               type: 'ajax',
+               closeBtnInside: false,
+               ajax: {
+                   settings: {dataType: "html"}
+               },
+               callbacks: {
+                   parseAjax: function(mfpResponse) {
+                       mfpResponse.data = $(mfpResponse.data).find('#content');
+                   }
+               }
+           });
+        });
+
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-3158698-61', 'auto');
+       ga('send', 'pageview');
+        
+            ga('set','userId', '102964280-ead23152200' );
+            ga('send', 'event', 'authentication', 'user-id 102964280');
+        
+
+    </script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/respond-6fad4e96a2e163b31007a749b405cba9.js" ></script>
+			<link href="/assets/respond-proxy-3f681d612462c29d29e1816fae51f0de.html" id="respond-proxy" rel="respond-proxy" />
+			<link href="/images/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+			<script src="/js/respond.proxy.js"></script>
+		<![endif]-->
+
+    <a href="#acessibilidade" class="retornaTopo" title="Retornar ao topo">Retornar ao topo</a>
+    </body>
+
+
+<script>
+    
+
+     
+
+    function limparTodos() {
+        $('#listaManuaisDinamico > li ').each(function () {
+            this.remove();
+        });
+    }
+
+    function populaMateriais(data) {
+        $.each(data.listaMateriais, function (key, val) {
+
+            var ul = document.getElementById("listaManuaisDinamico");
+            var li = document.createElement("li");
+            var a = document.createElement("a");
+            var text = document.createTextNode(val.descricao);
+            a.setAttribute("href", val.valor);
+            a.setAttribute("target", '_blank');
+            a.appendChild(text);
+            li.appendChild(a);
+            ul.appendChild(li);
+        });
+    }
+
+    function checkDashboard() {
+        if(window.location.href.indexOf('dashboard') > 0) {
+            showModalTour('forceTour');
+        } else {
+            alert('Para iniciar o Tour Virtual, acesse o curso desejado e clique novamente neste menu.');
+        }
+    }
+</script>
+
+</html>

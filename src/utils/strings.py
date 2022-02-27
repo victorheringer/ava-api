@@ -1,3 +1,5 @@
+import re
+
 def clean(s, replaceMap = {}):
   cleanString = s.strip().replace("%", "")
 
@@ -5,3 +7,11 @@ def clean(s, replaceMap = {}):
     cleanString = cleanString.replace(k, v)
   
   return cleanString
+
+def get_first_number(text):
+  try:
+    result = re.findall('\d+',text)[0]
+  except:
+    result = ''
+
+  return result

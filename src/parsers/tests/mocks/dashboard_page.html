@@ -1,0 +1,2868 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 ie"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 ie"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 ie"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9 ie"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> 
+
+<html lang="en"
+      class="no-js pda"><!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Colaborar - AVA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon-36db27c087e355dbd6ea0313764e81a4.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon-6aac205cf572d0571826d2b4b8869a42.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-touch-icon-retina-15501733a06bbcb29c1a4ed06f06b907.png">
+
+    <script type='text/javascript' charset='UTF-8'>
+        function getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length == 2) return parts.pop().split(";").shift();
+        }
+
+        window['adrum-start-time'] = new Date().getTime();
+
+        (function (config) {
+            config.appKey = 'AD-AAB-AAM-YNM';
+            config.adrumExtUrlHttp = 'http://cdn.appdynamics.com';
+            config.adrumExtUrlHttps = 'https://cdn.appdynamics.com';
+            config.beaconUrlHttp = 'http://col.eum-appdynamics.com';
+            config.beaconUrlHttps = 'https://col.eum-appdynamics.com';
+            config.xd = {enable: true};
+
+            (function (info) {
+                info.Ajax = extractUserData();
+                info.VPageView = extractUserData();
+                info.PageView = extractUserData();
+            })(config.userEventInfo || (config.userEventInfo = {}))
+        })(window['adrum-config'] || (window['adrum-config'] = {}));
+
+        function extractUserData() {
+            return {
+                userData: {
+                    colab_matricula: getCookie("colab_matricula"),
+                    colab_disciplina: getCookie("colab_disciplina"),
+                    colab_curso: getCookie("colab_curso"),
+                    colab_polo: getCookie("colab_polo")
+                }
+            };
+        }
+
+    </script>
+    <script src='//cdn.appdynamics.com/adrum/adrum-4.5.9.2098.js'></script>
+
+    <script type="text/javascript" src="/assets/jquery-c286b84ad19b425fb0ee34bb82e994d8.js" ></script>
+    <script type="text/javascript" src="/assets/modernizr-ed6559892b1388df2465eeee36c01695.js" ></script>
+    <link rel="stylesheet" href="/assets/colaborar-0ec7f191ddd4e14c446ef7c8690f24d9.css"/>
+    <link rel="stylesheet" href="/assets/magnific-popup-eabb0f354144f7b893fdbe4d3ca1bb3f.css"/>
+    <script type="text/javascript" src="/assets/colaborar-49c618c818b48371c50f0da7e71fc58a.js" ></script>
+    <script type="text/javascript" src="/assets/magnific-popup-72b8237763c0c00e073da2d261040ca1.js" ></script>
+    <script type="text/javascript" src="/assets/js-cookie-6e9eb1f53afb135aedaf90739c867738.js" ></script>
+    <script type="text/javascript" src="/assets/hotjar-d27977ade391b40ea077ca5368cd3a07.js" ></script>
+
+    
+    <meta name="layout" content="colaborar"/>
+    <link rel="stylesheet" href="/assets/dashBoard-cc4b788b38bddda480538ef62f8b776d.css"/>
+    <link rel="stylesheet" href="/assets/css-circular-progress-a383883d3b6378e0dbeee3de1cd02134.css"/>
+    <link rel="stylesheet" href="/assets/tour-virtual-eb0635829d61c93f99247124b6cc527a.css"/>
+    <script type="text/javascript" src="/assets/show-hide-2f77fd06dbb282323ae655975700853a.js" ></script>
+    <script type="text/javascript" src="/assets/tour-virtual-a77b9972bf0831cae694b1dd6ba0629f.js" ></script>
+
+
+</head>
+
+
+
+    <body class=" body-size-  pda">
+
+    <div class="off-canvas-wrap">
+        <div class="inner-wrapper">
+            <div class="navbar-header menuColaborar">
+                <a href="/index/index" class="logoPrincipal navbar-brand navbar-brand-pda hidden-xs"
+                   title="Portal Digital do Aluno">
+                    <img src='/assets/logo-azul-cursos-9e75672839098d1a009abe2e09d4548e.png' alt='Colaborar' title='Portal Digital do Aluno' class='logoCursos'>
+                    <strong class="logoTitulo">Portal Digital do Aluno</strong>
+                </a>
+                <button aria-controls="bs-navbar" aria-expanded="false" class="navbar-toggle pull-left collapsed"
+                        data-target="#bs-navbar" data-toggle="collapse" type="button">
+                    <a href="" class="logoPrincipal navbar-brand navbar-brand-pda hidden-xs hidden-sm"
+                       title="Portal Digital do Aluno">
+                        <img src="/assets/logo-azul-48356b4b0ed78b1b43adf66d7590327e.png" height="30" alt="Kroton Colaborar">
+                        <strong class="logoTitulo">Portal Digital do Aluno</strong>
+                    </a>
+                    <img src="/assets/logo-azul-48356b4b0ed78b1b43adf66d7590327e.png" alt="Colaborar"> <i
+                        class="fa fa-bars iconeMenu"></i>
+                </button>
+
+                <div class="notificacoes visible-sm visible-xs" tabindex="-1">
+                    <a href="/notificacao/index" title="Mensagem">
+                        <i class="fa fa-bell-o"></i>
+                    </a>
+
+                    
+                        <span class="sr-only">Você não possui mensagens não lidas</span>
+                    
+                </div>
+            </div>
+            <nav class="navbar-collapse collapse" id="bs-navbar" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li><a href="/index/index" title="Meus Cursos">Meus Cursos</a></li>
+                    
+                        <li role="presentation" class="dropdown">
+                            <a href="#" class="dropdown-toggle" id="drop4" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false" title="Serviços Online">Serviços Online <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+                                
+
+                                
+
+                                
+
+                                
+
+                                
+                                    <li>
+                                        <a title="Financeiro" href="#"><i
+                                                class="iconesMenu fa fa-money"></i> Financeiros</a>
+                                        <ul class="financeiroOpcoes">
+                                            <li><a href="/aluno/boleto/index" title="Boletos"><i
+                                                        class="iconesMenu fa fa-barcode"></i> Boletos</a></li>
+                                            
+                                            
+                                            <li><a href="/aluno/renegociacao/index" title="Renegociação"><i
+                                                        class="iconesMenu fa fa-dollar"></i> Renegociação</a></li>
+                                        </ul>
+                                    </li>
+                                
+
+                            
+
+                                
+                                <!-- Retiramos a lista das Roles de Alunos
+                                Para não visualizarem o item Solicitações de Serviços do menu
+                                Solicitado pela PO Camila em 12/2020
+                                Dev Team ThreadPool
+                                -->
+                                
+
+                                
+                                    <li><a href="/aluno/documentos/index" title="Documentos pendentes"><i
+                                                class="iconesMenu fa fa-folder"></i> Documentos Pendentes</a></li>
+                                
+
+                                
+                                    <li><a href="/aceite/list" title="Contratos">
+                                        <i class="iconesMenu fa fa-file"></i>Contratos</a></li>
+                                
+
+                                
+                                    
+                                        <li>
+                                            <a href="/aluno/dashboard/extrato-disciplinas/3000411703" title="Extrato de Disciplinas">
+                                                <i class="iconesMenu fa fa-list"></i>Extrato de Disciplinas
+                                            </a>
+                                        </li>
+                                    
+                                
+
+                                
+
+                                
+                                    <li>
+                                        <a href="/aluno/boletim/download-matriz-curricular/3000411703"
+                                           title="Download Matriz Curricular">
+                                            <i class="iconesMenu fa fa-edit"></i>Download Matriz Curricular
+                                        </a>
+                                    </li>
+                                
+
+                                
+                                    
+                                        <li>
+                                            
+                                        </li>
+                                    
+                                
+
+                                
+                                    
+                                
+
+                            
+                            </ul>
+                        </li>
+                    
+                    <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="drop4" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false" title="Apoio ao Estudo">Apoio ao Estudo <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+                            
+
+
+                            <li>
+                                <a href="/mensagem/index" title="Caixa de mensagens" class="contatoTutor"><i
+                                        class="iconesMenu fa fa-comments-o infinite rubberBand"></i> Caixa de mensagens</a>
+                            </li>
+
+
+                            
+                                <li>
+                                    <a href="/mensagem/form?para=vanice.tutel%40unopar.br" title="Mensagem para o Tutor" class="contatoTutor"><i
+                                            class="iconesMenu fa fa-comments-o infinite rubberBand"></i> Mensagem para o Tutor</a>
+                                </li>
+                            
+
+                            
+                                <li>
+                                    <a title="Sala do Tutor" href="/aluno/tutoria/index/3000411703"><i
+                                            class="iconesMenu fa fa-graduation-cap"></i> Sala do Tutor</a>
+                                </li>
+                                <li>
+                                    <a title="Livros" href="/aluno/livro/index/3000411703"><i
+                                            class="iconesMenu fa fa-book"></i> Livros</a>
+                                </li>
+                            
+
+                            <li>
+                                <a href="#" title="Manual">
+                                    <i class="iconesMenu fa fa-book"></i> <span>Manuais</span>
+                                </a>
+                            </li>
+                            <ul id="listaManuaisDinamico" class="manualOpcoes">
+                                <li>
+                                    <a href="http://static.colaboraread.com.br/upload/LMS/tutorial/1_1_20221.pdf" target="_blank" title="Manual Acadêmico">
+                                        <i class="iconesMenu fa fa-list-alt"></i>Manual Acadêmico
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://static.colaboraread.com.br/upload/LMS/tutorial/av_continuada/1_1_20221.pdf" target="_blank" title="Avaliação Continuada">
+                                        <i class="iconesMenu fa fa-list-alt"></i>Manual Avaliação Continuada
+                                    </a>
+                                </li>
+                             </ul>
+                             <li>
+                                 <a href="/biblioteca/digital/" title="Biblioteca Digital">
+                                     <i class="iconesMenu fa fa-book"></i> <span>Biblioteca Digital</span>
+                                 </a>
+                             </li>
+                             <ul class="financeiroOpcoes">
+                                 
+                                     <li>
+                                         <a href="/biblioteca/digital/busca-acervo" target="_blank"
+                                            title="Sala de Leitura">
+                                             <i class="iconesMenu fa fa-file-o"></i> Sala de Leitura
+                                         </a>
+                                     </li>
+                                 
+                                 <li>
+                                     <a href="http://pgsskroton.com.br/seer" target="_blank" title="Revista Científica">
+                                         <i class="iconesMenu fa-file-text"></i>
+                                         <span>Revista Científica</span>
+                                     </a>
+                                 </li>
+                             </ul>
+                             
+                                 <li>
+                                     <a title="Boletim" href="/aluno/boletim/index/3000411703"><i
+                                             class="iconesMenu fa fa-edit"></i> Boletim</a>
+                                 </li>
+                             
+                             
+                                 <li>
+                                     <a href="http://www.desafionotamaxima.com.br" target="_blank"
+                                        title="Desafio Nota Máxima">
+                                         <i class="iconesMenu fa fa-graduation-cap"></i> Desafio Nota Máxima
+                                     </a>
+                                 </li>
+                             
+                             
+                         </ul>
+                     </li>
+                     <li role="presentation" class="dropdown">
+                         <a href="#" class="dropdown-toggle" id="drop4" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false" title="Oportunidades">Oportunidades<span
+                                 class="caret"></span></a>
+                         <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+                             <li>
+                                 <a title="Canal Conecta" href="https://www.canalconecta.com.br/index?t=1">
+                                     <i class="iconesMenu fa fa-users"></i> Canal Conecta
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="http://www.amigovalepremio.com.br" target="_blank" title="Amigo Vale Prêmio"><i
+                                         class="iconesMenu fa fa-thumbs-o-up"></i>Amigo Vale Prêmio</a>
+                             </li>
+                             <li>
+                                 <a href="/curso-livre/index" title="Cursos Livres"><i
+                                         class="iconesMenu glyphicon glyphicon-book"></i> Cursos Livres</a>
+                             </li>
+
+                             
+
+                        </ul>
+                    </li>
+                    
+                    <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="drop4" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false"
+                           title="Conheça as funcionalidades do seu portal no menu Ajuda.">
+                            Ajuda
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+                            
+                                
+                                    <li>
+                                        
+                                            <a href="#" title="Assistir Vídeo" class="mfp-iframe"
+                                            data-mfp-src="https://static.colaboraread.com.br/upload/LMS/tutorial/tutorial_web_ava_colaborar/manual_colaborar_ava.html">
+                                                <i class="iconesMenu fa-file-text"></i> Assistir Vídeo
+                                            </a>
+                                        
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        
+                                            <a onclick="checkDashboard()" href="javascript:void(0);">
+                                                <i class="iconesMenu fa-globe"></i> Tour Virtual
+                                            </a>
+                                        
+                                    </li>
+                                
+                            
+                                
+                                    <li>
+                                        
+                                            <a href="#" title="Visualizar PDF" class="mfp-iframe"
+                                            data-mfp-src="https://static.colaboraread.com.br/upload/LMS/tutorial/K01042_Manual_Colaborar.pdf">
+                                                <i class="iconesMenu fa-file-text"></i> Visualizar PDF
+                                            </a>
+                                        
+                                    </li>
+                                
+                            
+                        </ul>
+                    </li>
+
+                    
+                    <li class="hidden-xs hidden-sm">
+                        <a href="#" class="popover-element js-notificacao-aluno link-notificacao" data-container="nav"
+                           data-toggle="popover" data-placement="bottom"
+                           data-href="/notificacao/list-unread">
+                            
+                                <i class="fa fa-bell-o" title="Você não possui notificações."><!-- icone --></i>
+                            
+
+                            
+                                <span class="sr-only">Você não possui notificações</span>
+                            
+                        </a>
+
+                    </li>
+
+
+                    
+                    
+
+                        <li class="hidden-xs hidden-sm">
+                            <a href="/mensagem/index" title="Caixa de Mensagens">
+                                <i class="fa fa-envelope-o infinite rubberBand"></i>
+                                
+                                    <span class="msg" id="message-menu-badge">99+</span>
+                                
+                            </a>
+                        </li>
+
+                    
+
+
+                    
+                    
+                        <li class="loginDetalhes dropdown hidden-xs hidden-sm" role="presentation">
+                            <a href="#" class="dropdown-toggle clearfix account-link" data-toggle="dropdown">
+                                <!-- <img src="/assets/avatar-bc560060c488bab3eab35795ecbd06a7.png" height="40" class="img-rounded imgLogin"> -->
+                                <div class='avatar-wrapper img-rounded img-login-pda'><img src="/assets/tiles/d-sm-ae3089ec364ad3c5cc9ac9c218f05584.png" id="null"/></div>
+
+                                <span class="text-right">
+                                    Daniel <span
+                                        class="caret" style="padding-top: 1px;"></span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/perfil/index" title="Acessar seu perfil"><i
+                                        class="iconesMenu fa fa-user"></i> Meu perfil</a></li>
+                                
+                                    <li>
+                                        <a href="/aluno/atualizacao-matricula/list-matricula" title="Acesse e confira seus dados"><i
+                                                class="iconesMenu fa fa-user"></i> Meus dados</a>
+                                    </li>
+                                
+                                <li><a href="/perfil/edit-password" title="Alterar seua senha"><i
+                                        class="iconesMenu fa fa-unlock-alt"></i> Alterar minha senha</a></li>
+                                
+                                
+                            </ul>
+
+                        </li>
+                    
+                    <li class="hidden-md hidden-lg"><a title="Area do Usuário" href="#"><i
+                            class="fa fa-user"></i> Area do Usuário</a></li>
+                    <li>
+                        <form action="/logout/index" method="post" Id="logoutForm" class="logout-form-pda" >
+                            <a href="#" title="Sair do sistema" class="js-security-logout"><i
+                                    class="fa fa-sign-out"></i> Sair</a>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="nav-acessibilidade hidden-xs hidden-sm">
+                <ul class="pull-left">
+                    <li><a href="#conteudo" title="Ir direto ao assunto, pressione Alt + 1." accesskey="1"
+                           tabindex="1">Saltar para o conteúdo [Alt + 1]</a></li>
+                    <li><a href="#conteudo" title="Acessar menu, pressione Alt + 2." accesskey="2"
+                           tabindex="1">Saltar para Navegação [Alt + 2]</a></li>
+                </ul>
+                
+                
+                <ul class="pull-right">
+                    <li><a href="" class="js-acessibilidade" data-type="fonte" accesskey="7" data-size="+"
+                           title="Aumentar fonte" tabindex="1">+A <span class="sr-only">Aumentar fonte</span></a></li>
+                    <li><a href="" class="js-acessibilidade" data-type="fonte" accesskey="6" data-size="-"
+                           title="Reduzir fonte" tabindex="1">-a <span class="sr-only">Reduzir fonte</span></a></li>
+                    <li><a href="/mapadosite" title="Acessar o mapa do site" accesskey="5" tabindex="1">Mapa do site</a></li>
+                    <li><a href="#" class="js-acessibilidade" data-type="contraste" accesskey="4" tabindex="1"
+                           title="Alto Contraste">Alto Contraste</a></li>
+                    <li><a href="/acessibilidade" accesskey="3" tabindex="1" title="Acessibilidade">Acessibilidade</a></li>
+                </ul>
+
+                <div style="clear:both;content:'';display: table;"></div>
+            </nav>
+
+            
+        <!--[if lt IE 8]><div class="col-md-12"><p class="alert alert-warning">Seu browser é <em>ultrapassado!</em> <a href="http://browsehappy.com/">Atualize agora mesmo</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">instale Google Chrome Frame</a> para visualizar este site.</p></div><![endif]-->
+            <noscript>
+                <div class="col-md-12"><p
+                        class="alert alert-warning"><strong>Atenção:</strong> Você deve habilitar o Javascript em seu navegador para melhor visualizar o conteudo deste site.
+                </p></div>
+            </noscript><!-- /no-js -->
+
+            <main id="conteudo">
+                
+<main id="page-content">
+    <div class="container-fluid paginasInternas">
+        <div id="info-degustacao" class="alert alert-info" style="display: none">
+            <span id="info-degustacao-span"></span>
+        </div>
+        <div class="loading-spin" id="js-spinner"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block blocosDashboard blocoAreaAluno tour-step-1 tour-step-2 tour-step-8">
+                            <div class="block-title ui-sortable-handle">
+                                <h4 style="left:9%">
+                                    Disciplinas
+                                </h4>
+                                <form action="/aluno/dashboard/index" method="get" >
+                                    <select class="form-control selecaoSemestre" name="matriculaId" id="matriculaId" onchange="this.form.submit()">
+                                        
+                                            <option value="3000411703" selected >
+                                                Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - 3º Semestre
+                                            </option>
+                                        
+                                            <option value="3000411702"  >
+                                                Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - 2º Semestre
+                                            </option>
+                                        
+                                            <option value="3000411701"  >
+                                                Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - 1º Semestre
+                                            </option>
+                                        
+                                    </select>
+                                </form>
+                            </div>
+
+                            <ul class="nav nav-tabs js-bootstrap-nav-bar tabelaBloco" role="tablist">
+                                <li class="headDisciplinas">
+                                    <table>
+                                        <tr>
+                                            <td class="atividades-cronograma-table-nome-pda"><strong>Nome</strong></td>
+                                            
+                                                <td class="atividadesCronogramaTableConceito"><strong>Pontuação</strong></td>
+                                            
+                                            <td class="atividades-cronograma-table-datas-pda text-center"><strong>Próx. Vencimento</strong></td>
+                                            <td id="tour-step-2" class="atividadesCronogramaTableAtividades text-center"><strong>Ações</strong></td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content tabelaDashboard">
+                                <div id="navbar-content-aluno-pda" class="tab-pane">
+                                    <ul class="list-line">
+                                        
+                                        
+                                        
+                                            <li class="atividadesCronograma">
+                                                
+                                                    <table class="table">
+                                                        <tr>
+                                                            <td class="atividadesCronogramaTableNome">
+                                                                
+                                                                
+                                                                
+                                                                    
+                                                                        
+                                                                    
+                                                                
+                                                                
+                                                                    <a href="/aluno/timeline/index/3000411703?ofertaDisciplinaId=1740323" title="Análise Orientada a Objetos " class="pull-left atividadeNome">
+                                                                        Análise Orientada a Objetos
+                                                                        <small><i></i></small>
+                                                                        
+                                                                    </a>
+                                                                
+
+                                                            </td>
+                                                            <td class="atividadesCronogramaTableConceito">
+                                                                
+                                                            </td>
+                                                        <td class="atividadesCronogramaTableDatas">
+                                                        <p class="text-muted">
+                                                            
+                                                                28/02/2022
+                                                                </td>
+                                                                <td class="atividadesCronogramaTableAtencao">
+                                                                    
+
+                                                                        
+
+                                                                        
+                                                                            <i class="chamadaAtencao  js-bootstrap-tooltip"
+                                                                               data-toggle="tooltip"
+                                                                               data-placement="top"
+                                                                               title="Atenção: você tem 4 atividade(s) próxima(s) ao vencimento."> 4 </i>
+                                                                        
+                                                                    
+                                                                </td>
+                                                            
+                                                        </p>
+                                                        </td>
+
+                                                            <td class="atividadesCronogramaTableAtividades">
+                                                                
+                                                                    <span class="dadosPeriodo">
+                                                                        <a href="#" aria-controls="collapseExample" aria-expanded="true" class="btn btn-primary btnMaisDetalhes collapsed js-active-atividades tour-link-step-3-1" is-loaded="0" data-boletim-id="126151148" data-target="#collapseExample1341086" id="list-atividades-126151148" data-toggle="collapse" type="button" title="Listar Atividades">
+                                                                        </a>
+                                                                    </span>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+
+                                                    
+                                                    
+                                                        <div class="collapse" id="collapseExample1341086" aria-expanded="false">
+                                                            
+                                                                
+                                                                    <div class="col-md-6"></div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3" style="margin-top: 17px;">
+                                                                            
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                        <div id="tour-step-3-1" class="col-md-3">
+                                                                            
+                                                                            
+                                                                                <button id="tour-btn-step-3-1" type="button" class="btn btn-primary btn-sm marginTopBottom borderRadiusQuinze"
+                                                                                        onclick="openNav(126151148, 1740323, '3000411703', 1, 'Análise Orientada a Objetos', '1')">Visualizar Pontos</button>
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                            
+                                                            <ul class="list-line" id="atividades-126151148">
+                                                            </ul>
+                                                        </div>
+                                                    
+                                                
+                                            </li>
+                                        
+                                            <li class="atividadesCronograma">
+                                                
+                                                    <table class="table">
+                                                        <tr>
+                                                            <td class="atividadesCronogramaTableNome">
+                                                                
+                                                                
+                                                                
+                                                                    
+                                                                        
+                                                                    
+                                                                
+                                                                
+                                                                    <a href="/aluno/timeline/index/3000411703?ofertaDisciplinaId=1740322" title="Linguagem de Programação " class="pull-left atividadeNome">
+                                                                        Linguagem de Programação
+                                                                        <small><i></i></small>
+                                                                        
+                                                                    </a>
+                                                                
+
+                                                            </td>
+                                                            <td class="atividadesCronogramaTableConceito">
+                                                                
+                                                            </td>
+                                                        <td class="atividadesCronogramaTableDatas">
+                                                        <p class="text-muted">
+                                                            
+                                                                12/03/2022
+                                                                </td>
+                                                                <td class="atividadesCronogramaTableAtencao">
+                                                                    
+
+                                                                        
+
+                                                                        
+                                                                    
+                                                                </td>
+                                                            
+                                                        </p>
+                                                        </td>
+
+                                                            <td class="atividadesCronogramaTableAtividades">
+                                                                
+                                                                    <span class="dadosPeriodo">
+                                                                        <a href="#" aria-controls="collapseExample" aria-expanded="true" class="btn btn-primary btnMaisDetalhes collapsed js-active-atividades tour-link-step-3-2" is-loaded="0" data-boletim-id="126151147" data-target="#collapseExample1341088" id="list-atividades-126151147" data-toggle="collapse" type="button" title="Listar Atividades">
+                                                                        </a>
+                                                                    </span>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+
+                                                    
+                                                    
+                                                        <div class="collapse" id="collapseExample1341088" aria-expanded="false">
+                                                            
+                                                                
+                                                                    <div class="col-md-6"></div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3" style="margin-top: 17px;">
+                                                                            
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                        <div id="tour-step-3-2" class="col-md-3">
+                                                                            
+                                                                            
+                                                                                <button id="tour-btn-step-3-2" type="button" class="btn btn-primary btn-sm marginTopBottom borderRadiusQuinze"
+                                                                                        onclick="openNav(126151147, 1740322, '3000411703', 1, 'Linguagem de Programação', '1')">Visualizar Pontos</button>
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                            
+                                                            <ul class="list-line" id="atividades-126151147">
+                                                            </ul>
+                                                        </div>
+                                                    
+                                                
+                                            </li>
+                                        
+                                            <li class="atividadesCronograma">
+                                                
+                                                    <table class="table">
+                                                        <tr>
+                                                            <td class="atividadesCronogramaTableNome">
+                                                                
+                                                                
+                                                                
+                                                                    
+                                                                        
+                                                                    
+                                                                
+                                                                
+                                                                    <a href="/aluno/timeline/index/3000411703?ofertaDisciplinaId=1740328" title="Programação e Desenvolvimento de Banco de Dados " class="pull-left atividadeNome">
+                                                                        Programação e Desenvolvimento de Banco de Dados
+                                                                        <small><i></i></small>
+                                                                        
+                                                                    </a>
+                                                                
+
+                                                            </td>
+                                                            <td class="atividadesCronogramaTableConceito">
+                                                                
+                                                            </td>
+                                                        <td class="atividadesCronogramaTableDatas">
+                                                        <p class="text-muted">
+                                                            
+                                                                09/04/2022
+                                                                </td>
+                                                                <td class="atividadesCronogramaTableAtencao">
+                                                                    
+
+                                                                        
+
+                                                                        
+                                                                    
+                                                                </td>
+                                                            
+                                                        </p>
+                                                        </td>
+
+                                                            <td class="atividadesCronogramaTableAtividades">
+                                                                
+                                                                    <span class="dadosPeriodo">
+                                                                        <a href="#" aria-controls="collapseExample" aria-expanded="true" class="btn btn-primary btnMaisDetalhes collapsed js-active-atividades tour-link-step-3-3" is-loaded="0" data-boletim-id="126151153" data-target="#collapseExample1341237" id="list-atividades-126151153" data-toggle="collapse" type="button" title="Listar Atividades">
+                                                                        </a>
+                                                                    </span>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+
+                                                    
+                                                    
+                                                        <div class="collapse" id="collapseExample1341237" aria-expanded="false">
+                                                            
+                                                                
+                                                                    <div class="col-md-6"></div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3" style="margin-top: 17px;">
+                                                                            
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                        <div id="tour-step-3-3" class="col-md-3">
+                                                                            
+                                                                            
+                                                                                <button id="tour-btn-step-3-3" type="button" class="btn btn-primary btn-sm marginTopBottom borderRadiusQuinze"
+                                                                                        onclick="openNav(126151153, 1740328, '3000411703', 1, 'Programação e Desenvolvimento de Banco de Dados', '1')">Visualizar Pontos</button>
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                            
+                                                            <ul class="list-line" id="atividades-126151153">
+                                                            </ul>
+                                                        </div>
+                                                    
+                                                
+                                            </li>
+                                        
+                                            <li class="atividadesCronograma">
+                                                
+                                                    <table class="table">
+                                                        <tr>
+                                                            <td class="atividadesCronogramaTableNome">
+                                                                
+                                                                
+                                                                
+                                                                    
+                                                                        
+                                                                    
+                                                                
+                                                                
+                                                                    <a href="/aluno/timeline/index/3000411703?ofertaDisciplinaId=1740327" title="Interface e Usabilidade " class="pull-left atividadeNome">
+                                                                        Interface e Usabilidade
+                                                                        <small><i></i></small>
+                                                                        
+                                                                    </a>
+                                                                
+
+                                                            </td>
+                                                            <td class="atividadesCronogramaTableConceito">
+                                                                
+                                                            </td>
+                                                        <td class="atividadesCronogramaTableDatas">
+                                                        <p class="text-muted">
+                                                            
+                                                                05/03/2022
+                                                                </td>
+                                                                <td class="atividadesCronogramaTableAtencao">
+                                                                    
+
+                                                                        
+
+                                                                        
+                                                                            <i class="chamadaAtencao  js-bootstrap-tooltip"
+                                                                               data-toggle="tooltip"
+                                                                               data-placement="top"
+                                                                               title="Atenção: você tem 1 atividade(s) próxima(s) ao vencimento."> 1 </i>
+                                                                        
+                                                                    
+                                                                </td>
+                                                            
+                                                        </p>
+                                                        </td>
+
+                                                            <td class="atividadesCronogramaTableAtividades">
+                                                                
+                                                                    <span class="dadosPeriodo">
+                                                                        <a href="#" aria-controls="collapseExample" aria-expanded="true" class="btn btn-primary btnMaisDetalhes collapsed js-active-atividades tour-link-step-3-4" is-loaded="0" data-boletim-id="126151152" data-target="#collapseExample1341087" id="list-atividades-126151152" data-toggle="collapse" type="button" title="Listar Atividades">
+                                                                        </a>
+                                                                    </span>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+
+                                                    
+                                                    
+                                                        <div class="collapse" id="collapseExample1341087" aria-expanded="false">
+                                                            
+                                                                
+                                                                    <div class="col-md-6"></div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3" style="margin-top: 17px;">
+                                                                            
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                        <div id="tour-step-3-4" class="col-md-3">
+                                                                            
+                                                                            
+                                                                                <button id="tour-btn-step-3-4" type="button" class="btn btn-primary btn-sm marginTopBottom borderRadiusQuinze"
+                                                                                        onclick="openNav(126151152, 1740327, '3000411703', 1, 'Interface e Usabilidade', '1')">Visualizar Pontos</button>
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                            
+                                                            <ul class="list-line" id="atividades-126151152">
+                                                            </ul>
+                                                        </div>
+                                                    
+                                                
+                                            </li>
+                                        
+                                            <li class="atividadesCronograma">
+                                                
+                                                    <table class="table">
+                                                        <tr>
+                                                            <td class="atividadesCronogramaTableNome">
+                                                                
+                                                                
+                                                                
+                                                                    
+                                                                        
+                                                                    
+                                                                
+                                                                
+                                                                    <a href="/aluno/timeline/index/3000411703?ofertaDisciplinaId=1740321" title="Optativa 1 " class="pull-left atividadeNome">
+                                                                        Optativa 1
+                                                                        <small><i></i></small>
+                                                                        
+                                                                    </a>
+                                                                
+
+                                                            </td>
+                                                            <td class="atividadesCronogramaTableConceito">
+                                                                
+                                                            </td>
+                                                        <td class="atividadesCronogramaTableDatas">
+                                                        <p class="text-muted">
+                                                            
+                                                                05/03/2022
+                                                                </td>
+                                                                <td class="atividadesCronogramaTableAtencao">
+                                                                    
+
+                                                                        
+
+                                                                        
+                                                                            <i class="chamadaAtencao  js-bootstrap-tooltip"
+                                                                               data-toggle="tooltip"
+                                                                               data-placement="top"
+                                                                               title="Atenção: você tem 1 atividade(s) próxima(s) ao vencimento."> 1 </i>
+                                                                        
+                                                                    
+                                                                </td>
+                                                            
+                                                        </p>
+                                                        </td>
+
+                                                            <td class="atividadesCronogramaTableAtividades">
+                                                                
+                                                                    <span class="dadosPeriodo">
+                                                                        <a href="#" aria-controls="collapseExample" aria-expanded="true" class="btn btn-primary btnMaisDetalhes collapsed js-active-atividades tour-link-step-3-5" is-loaded="0" data-boletim-id="126151146" data-target="#collapseExample1341235" id="list-atividades-126151146" data-toggle="collapse" type="button" title="Listar Atividades">
+                                                                        </a>
+                                                                    </span>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+
+                                                    
+                                                    
+                                                        <div class="collapse" id="collapseExample1341235" aria-expanded="false">
+                                                            
+                                                                
+                                                                    <div class="col-md-6"></div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3" style="margin-top: 17px;">
+                                                                            
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                        <div id="tour-step-3-5" class="col-md-3">
+                                                                            
+                                                                            
+                                                                                <button id="tour-btn-step-3-5" type="button" class="btn btn-primary btn-sm marginTopBottom borderRadiusQuinze"
+                                                                                        onclick="openNav(126151146, 1740321, '3000411703', 1, 'Optativa 1', '1')">Visualizar Pontos</button>
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                            
+                                                            <ul class="list-line" id="atividades-126151146">
+                                                            </ul>
+                                                        </div>
+                                                    
+                                                
+                                            </li>
+                                        
+                                            <li class="atividadesCronograma">
+                                                
+                                                    <table class="table">
+                                                        <tr>
+                                                            <td class="atividadesCronogramaTableNome">
+                                                                
+                                                                
+                                                                
+                                                                    
+                                                                        
+                                                                    
+                                                                
+                                                                
+                                                                    <a href="/aluno/timeline/index/3000411703?ofertaDisciplinaId=1740326" title="Linguagem Orientada a Objetos " class="pull-left atividadeNome">
+                                                                        Linguagem Orientada a Objetos
+                                                                        <small><i></i></small>
+                                                                        
+                                                                    </a>
+                                                                
+
+                                                            </td>
+                                                            <td class="atividadesCronogramaTableConceito">
+                                                                
+                                                            </td>
+                                                        <td class="atividadesCronogramaTableDatas">
+                                                        <p class="text-muted">
+                                                            
+                                                                07/05/2022
+                                                                </td>
+                                                                <td class="atividadesCronogramaTableAtencao">
+                                                                    
+
+                                                                        
+
+                                                                        
+                                                                    
+                                                                </td>
+                                                            
+                                                        </p>
+                                                        </td>
+
+                                                            <td class="atividadesCronogramaTableAtividades">
+                                                                
+                                                                    <span class="dadosPeriodo">
+                                                                        <a href="#" aria-controls="collapseExample" aria-expanded="true" class="btn btn-primary btnMaisDetalhes collapsed js-active-atividades tour-link-step-3-6" is-loaded="0" data-boletim-id="126151151" data-target="#collapseExample1341089" id="list-atividades-126151151" data-toggle="collapse" type="button" title="Listar Atividades">
+                                                                        </a>
+                                                                    </span>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+
+                                                    
+                                                    
+                                                        <div class="collapse" id="collapseExample1341089" aria-expanded="false">
+                                                            
+                                                                
+                                                                    <div class="col-md-6"></div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3" style="margin-top: 17px;">
+                                                                            
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                        <div id="tour-step-3-6" class="col-md-3">
+                                                                            
+                                                                            
+                                                                                <button id="tour-btn-step-3-6" type="button" class="btn btn-primary btn-sm marginTopBottom borderRadiusQuinze"
+                                                                                        onclick="openNav(126151151, 1740326, '3000411703', 1, 'Linguagem Orientada a Objetos', '1')">Visualizar Pontos</button>
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                            
+                                                            <ul class="list-line" id="atividades-126151151">
+                                                            </ul>
+                                                        </div>
+                                                    
+                                                
+                                            </li>
+                                        
+                                            <li class="atividadesCronograma">
+                                                
+                                                    <table class="table">
+                                                        <tr>
+                                                            <td class="atividadesCronogramaTableNome">
+                                                                
+                                                                
+                                                                
+                                                                    
+                                                                        
+                                                                    
+                                                                
+                                                                
+                                                                    <a href="/aluno/timeline/index/3000411703?ofertaDisciplinaId=1740325" title="Ed - Design Thinking " class="pull-left atividadeNome">
+                                                                        Ed - Design Thinking
+                                                                        <small><i></i></small>
+                                                                        
+                                                                    </a>
+                                                                
+
+                                                            </td>
+                                                            <td class="atividadesCronogramaTableConceito">
+                                                                
+                                                            </td>
+                                                        <td class="atividadesCronogramaTableDatas">
+                                                        <p class="text-muted">
+                                                            
+                                                                18/06/2022
+                                                                </td>
+                                                                <td class="atividadesCronogramaTableAtencao">
+                                                                    
+
+                                                                        
+
+                                                                        
+                                                                    
+                                                                </td>
+                                                            
+                                                        </p>
+                                                        </td>
+
+                                                            <td class="atividadesCronogramaTableAtividades">
+                                                                
+                                                                    <span class="dadosPeriodo">
+                                                                        <a href="#" aria-controls="collapseExample" aria-expanded="true" class="btn btn-primary btnMaisDetalhes collapsed js-active-atividades tour-link-step-3-7" is-loaded="0" data-boletim-id="126151150" data-target="#collapseExample1353438" id="list-atividades-126151150" data-toggle="collapse" type="button" title="Listar Atividades">
+                                                                        </a>
+                                                                    </span>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+
+                                                    
+                                                    
+                                                        <div class="collapse" id="collapseExample1353438" aria-expanded="false">
+                                                            
+                                                                
+                                                                    <div class="col-md-6"></div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3" style="margin-top: 17px;">
+                                                                            
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                        <div id="tour-step-3-7" class="col-md-3">
+                                                                            
+                                                                            
+                                                                                <button id="tour-btn-step-3-7" type="button" class="btn btn-primary btn-sm marginTopBottom borderRadiusQuinze"
+                                                                                        onclick="openNav(126151150, 1740325, '3000411703', 1, 'Ed - Design Thinking', '11')">Visualizar Pontos</button>
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                            
+                                                            <ul class="list-line" id="atividades-126151150">
+                                                            </ul>
+                                                        </div>
+                                                    
+                                                
+                                            </li>
+                                        
+                                            <li class="atividadesCronograma">
+                                                
+                                                    <table class="table">
+                                                        <tr>
+                                                            <td class="atividadesCronogramaTableNome">
+                                                                
+                                                                
+                                                                
+                                                                    
+                                                                        
+                                                                    
+                                                                
+                                                                
+                                                                    <a href="/aluno/timeline/index/3000411703?ofertaDisciplinaId=1740324" title="Projeto Integrado III " class="pull-left atividadeNome">
+                                                                        Projeto Integrado III
+                                                                        <small><i></i></small>
+                                                                        
+                                                                    </a>
+                                                                
+
+                                                            </td>
+                                                            <td class="atividadesCronogramaTableConceito">
+                                                                
+                                                            </td>
+                                                        <td class="atividadesCronogramaTableDatas">
+                                                        <p class="text-muted">
+                                                            
+                                                                14/05/2022
+                                                                </td>
+                                                                <td class="atividadesCronogramaTableAtencao">
+                                                                    
+
+                                                                        
+
+                                                                        
+                                                                    
+                                                                </td>
+                                                            
+                                                        </p>
+                                                        </td>
+
+                                                            <td class="atividadesCronogramaTableAtividades">
+                                                                
+                                                                    <span class="dadosPeriodo">
+                                                                        <a href="#" aria-controls="collapseExample" aria-expanded="true" class="btn btn-primary btnMaisDetalhes collapsed js-active-atividades tour-link-step-3-8" is-loaded="0" data-boletim-id="126151149" data-target="#collapseExample1341238" id="list-atividades-126151149" data-toggle="collapse" type="button" title="Listar Atividades">
+                                                                        </a>
+                                                                    </span>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+
+                                                    
+                                                    
+                                                        <div class="collapse" id="collapseExample1341238" aria-expanded="false">
+                                                            
+                                                                
+                                                                    <div class="col-md-6"></div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3" style="margin-top: 17px;">
+                                                                            
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                        <div id="tour-step-3-8" class="col-md-3">
+                                                                            
+                                                                            
+                                                                                <button id="tour-btn-step-3-8" type="button" class="btn btn-primary btn-sm marginTopBottom borderRadiusQuinze"
+                                                                                        onclick="openNav(126151149, 1740324, '3000411703', 1, 'Projeto Integrado III', '3')">Visualizar Pontos</button>
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                            
+                                                            <ul class="list-line" id="atividades-126151149">
+                                                            </ul>
+                                                        </div>
+                                                    
+                                                
+                                            </li>
+                                        
+                                            <li class="atividadesCronograma">
+                                                
+                                                    <table class="table">
+                                                        <tr>
+                                                            <td class="atividadesCronogramaTableNome">
+                                                                
+                                                                
+                                                                
+                                                                    
+                                                                        
+                                                                    
+                                                                
+                                                                
+                                                                    <a href="/aluno/timeline/index/3000411703?ofertaDisciplinaId=1784016" title="Projeto Integrado II (Dependência)" class="pull-left atividadeNome">
+                                                                        Projeto Integrado II
+                                                                        <small><i>(Dependência)</i></small>
+                                                                        
+                                                                    </a>
+                                                                
+
+                                                            </td>
+                                                            <td class="atividadesCronogramaTableConceito">
+                                                                
+                                                            </td>
+                                                        <td class="atividadesCronogramaTableDatas">
+                                                        <p class="text-muted">
+                                                            
+                                                                14/05/2022
+                                                                </td>
+                                                                <td class="atividadesCronogramaTableAtencao">
+                                                                    
+
+                                                                        
+
+                                                                        
+                                                                    
+                                                                </td>
+                                                            
+                                                        </p>
+                                                        </td>
+
+                                                            <td class="atividadesCronogramaTableAtividades">
+                                                                
+                                                                    <span class="dadosPeriodo">
+                                                                        <a href="#" aria-controls="collapseExample" aria-expanded="true" class="btn btn-primary btnMaisDetalhes collapsed js-active-atividades tour-link-step-3-9" is-loaded="0" data-boletim-id="126151154" data-target="#collapseExample1353440" id="list-atividades-126151154" data-toggle="collapse" type="button" title="Listar Atividades">
+                                                                        </a>
+                                                                    </span>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+
+                                                    
+                                                    
+                                                        <div class="collapse" id="collapseExample1353440" aria-expanded="false">
+                                                            
+                                                                
+                                                                    <div class="col-md-6"></div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-3" style="margin-top: 17px;">
+                                                                            
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                        <div id="tour-step-3-9" class="col-md-3">
+                                                                            
+                                                                            
+                                                                                <button id="tour-btn-step-3-9" type="button" class="btn btn-primary btn-sm marginTopBottom borderRadiusQuinze"
+                                                                                        onclick="openNav(126151154, 1784016, '3000411703', 1, 'Projeto Integrado II', '3')">Visualizar Pontos</button>
+                                                                                
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                            
+                                                            <ul class="list-line" id="atividades-126151154">
+                                                            </ul>
+                                                        </div>
+                                                    
+                                                
+                                            </li>
+                                        
+                                        
+                                            <li class="atividadesCronograma">
+                                                <table class="table">
+                                                    <tr>
+                                                        <td>
+                                                            <a href="/aluno/timeline/index/3000411703" title="Atividades interdisciplinares" class="atividadeNome">
+                                                                Atividades interdisciplinares
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 colunasMenores">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="tour-step-9" class="block blocosDashboardMenor blocoServicosOnline">
+                            <div class="block-title">
+                                <h4>
+                                    Serviços Online
+                                </h4>
+                            </div>
+                            <div class="opcoes" id="blocoServicos">
+
+                                <div>
+
+                                    <a href="#" title="Financeiro" class="solicitacoesServicos setaDropDownFinanceiro" aria-controls="collapseExample" aria-expanded="true" data-toggle="collapse" data-target="#collapseFinanc">
+                                        <i class="fa fa-money"></i>Financeiro
+                                        
+                                    </a>
+
+                                    
+
+                                    <span class="collapsed setaDropdown setaDropDownFinanceiro" aria-controls="collapseExample" aria-expanded="true" data-toggle="collapse" data-target="#collapseFinanc"></span>
+
+                                    <ul class="list-unstyled listaFinanceiro collapse" id="collapseFinanc" aria-expanded="false">
+                                        <li>
+                                            <a href="/aluno/boleto/index" title="Boletos" class="boletos">
+                                                <i class="fa fa-barcode"></i>Boletos
+                                                
+                                            </a>
+                                        </li>
+                                        
+                                        
+                                        
+                                        <li>
+                                            <a href="/aluno/renegociacao/index" title="Renegociação"><i class="fa fa-dollar"></i title="Renegociação">Renegociação</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                
+
+                                    <div>
+                                        <span>
+                                            <a href="/aluno/solicitacao/list/3000411703" title="Solicitações de Serviços" class="solicitacoesServicos">
+                                                <i class="glyphicon glyphicon-hand-up"></i>Solicitações de Serviços
+                                            </a>
+                                        </span>
+
+                                        <span class="collapsed setaDropdown" aria-controls="collapseExample" aria-expanded="true" data-toggle="collapse" data-target="#collapseSolic"></span>
+
+                                        <ul class="list-unstyled listaSolicitacao collapse" id="collapseSolic" aria-expanded="false">
+                                            <li>
+                                                <a href="/aluno/solicitacao/create/3000411703?servicoId=1782" title="Inclusão de DP e/ou AD"><i class="fa fa-plus"></i>Inclusão de DP e/ou AD </a>
+                                            </li>
+                                            <li>
+                                                <a href="/aluno/solicitacao/create/3000411703?servicoId=1781" title="Exclusão de DP e/ou AD"><i class="fa fa-times"></i>Exclusão de DP e/ou AD </a>
+                                            </li>
+                                            <li>
+                                                <a href="/aluno/solicitacao/create/3000411703?servicoId=1038" title="Segunda Chamada de Prova"><i class="fa fa-pencil-square"></i>Segunda Chamada de Prova</a>
+                                            </li>
+                                            <li>
+                                                <a href="/aluno/solicitacao/list/3000411703" title="Outros serviços">
+                                                    <i class="fa fa-list-alt"></i>Outros serviços
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                
+
+                                
+                                    <a href="/aluno/documentos/index" title="Documentos pendentes"><i class="fa fa-folder"></i>Documentos Pendentes</a>
+                                
+
+                                
+                                    
+                                        <a href="/aluno/solicitacao/extrato-dependencia/3000411703?alunoId=30004117" title="Extrato de valores para AD/DP">
+                                            <i class="fa fa-list"></i>Extrato de valores para AD/DP
+                                        </a>
+                                    
+                                
+
+                                
+                                    <a href="/aluno/dashboard/extrato-disciplinas/3000411703" title="Extrato de Disciplinas">
+                                        <i class="fa fa-list"></i>Extrato de Disciplinas
+                                    </a>
+                                
+
+                                
+
+                                <a href="/aluno/boletim/download-matriz-curricular/3000411703" title="Download Matriz Curricular">
+                                    <i class="fa fa-edit"></i>Download Matriz Curricular
+                                </a>
+
+                                <a href="/aluno/agendamento/index/3000411703" class=" js-agendamento" title="Agendamento de prova digital">
+                                    <i class="fa fa-calendar"></i>Agendamento de prova digital
+                                </a>
+
+                                
+
+
+                                
+
+                                    
+                                
+
+
+                                
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="tour-step-10" class="block blocosDashboard blocoApoioEstudo">
+                            <div class="block-title"><h4>Apoio ao Estudo </h4></div>
+                            <div class="opcoes" id="bloco-dashboard">
+                                
+
+
+
+
+                                <div>
+
+
+                                    <span>
+                                        <a href="#" title="Mensagem" class="solicitacoesServicos">
+                                            <i class="fa fa-comments-o"></i>Mensagem para o Tutor
+                                        </a>
+                                    </span>
+
+
+                                    <span class="collapsed setaDropdown" aria-expanded="true" data-toggle="collapse" data-target="#collapseMensagem"></span>
+                                    <ul class="list-unstyled listaBiblioteca collapse" id="collapseMensagem" aria-expanded="false">
+                                        
+                                            
+                                                
+                                                    <li>
+                                                        <a href="/mensagem/form?para=vanice.tutel%40unopar.br" title="Mensagem para o Tutor" class="contatoTutor">
+                                                            <i class="fa-file-text"></i>Tutor regular
+                                                        </a>
+                                                    </li>
+                                                
+                                            
+                                        
+
+                                        
+                                            
+                                                <li>
+                                                    <a href="/mensagem/form?para=" title="Mensagem para o Tutor" class="contatoTutor">
+                                                        <i class="fa-file-text"></i>DP Projeto Integrado II
+                                                    </a>
+                                                </li>
+                                            
+                                        
+
+                                    </ul>
+                                </div>
+
+
+
+
+
+
+                                <a href="/aluno/tutoria/index/3000411703" title="Sala do Tutor">
+                                    <i class="fa fa-graduation-cap"></i>Sala do Tutor
+                                </a>
+
+                                
+                                    <div>
+                                        <span>
+                                            <a href="/aluno/livro/index/3000411703" title="Livros" class="solicitacoesServicos">
+                                                <i class="fa fa-book"></i>Livros
+                                            </a>
+                                        </span>
+
+                                        <span class="collapsed setaDropdown" aria-expanded="true" data-toggle="collapse" data-target="#collapseLivros"></span>
+
+                                        <ul class="list-unstyled listaBiblioteca collapse" id="collapseLivros" aria-expanded="false">
+                                            
+                                                
+                                                    <li>
+                                                        <a href="http://static.colaboraread.com.br/upload/LMS/livros/LivrosColaborar_Apoio_ao_Estudo.pdf" target="_blank">
+                                                            <i class="fa-book"></i>LIVROS - APOIO AO ESTUDO
+                                                        </a>
+                                                    </li>
+                                                
+                                                
+                                            
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <span>
+                                            <a href="#" title="Manuais" class="solicitacoesServicos">
+                                                <i class="fa fa-book"></i>Manuais
+                                            </a>
+                                        </span>
+                                        <span class="collapsed setaDropdown" aria-expanded="true" data-toggle="collapse" data-target="#collapseManual"></span>
+                                        <ul class="list-unstyled listaBiblioteca collapse" id="collapseManual" aria-expanded="false">
+                                            <li>
+                                                <a href="http://static.colaboraread.com.br/upload/LMS/tutorial/1_1_20221.pdf" target="_blank" title="Manual Acadêmico">
+                                                    <i class="fa fa-list-alt"></i>Manual Acadêmico
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://static.colaboraread.com.br/upload/LMS/tutorial/av_continuada/1_1_20221.pdf" target="_blank" title="Avaliação Continuada">
+                                                    <i class="fa fa-list-alt"></i>Manual Avaliação Continuada
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                
+
+                                
+
+                                    
+
+                                        <div>
+                                            <span>
+                                                <a href="/biblioteca/digital/" title="Biblioteca Digital" class="solicitacoesServicos">
+                                                    <i class="fa fa-book"></i>Biblioteca Digital
+                                                </a>
+                                            </span>
+
+                                            <span class="collapsed setaDropdown" aria-controls="collapseExample" aria-expanded="true" data-toggle="collapse" data-target="#collapseBiblio"></span>
+
+                                            <ul class="list-unstyled listaBiblioteca collapse" id="collapseBiblio" aria-expanded="false">
+                                                <li>
+                                                    <a href="/biblioteca/digital/busca-acervo" title="Sala de Leitura" target="_blank">
+                                                        <i class="fa fa-file-o"></i>Sala de Leitura
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="http://www.pgsskroton.com.br" target="_blank" title="Revista Científica">
+                                                        <i class="fa-file-text"></i>Revista Científica
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+
+                                    
+                                    
+
+
+                                
+
+                                <div>
+                                    <a class="alinhaBoletim" href="/aluno/boletim/index/3000411703" title="Boletim">
+                                        <i class="fa fa-edit"></i>Boletim
+                                    </a>
+                                    
+                                    
+
+                                    
+                                </div>
+
+                                
+                                    
+                                        <a href="http://www.desafionotamaxima.com.br" target="_blank" title="Desafio Nota Máxima">
+                                            <i class="fa fa-graduation-cap"></i> Desafio Nota Máxima
+                                            <i class="fa fa-question-circle js-bootstrap-tooltip" data-toggle="tooltip" data-placement="top" title="É um programa de ensino com o objetivo de identificar lacunas de aprendizagem, e por meio de uma plataforma de Ensino Adaptativo apoiar o seu desempenho acadêmico."></i>
+                                        </a>
+                                    
+                                
+
+                                
+
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 colunasMenores">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="tour-step-11" class="block blocosDashboardMenor blocoOportunidades">
+                            <div class="block-title">
+                                <h4>
+                                    Oportunidades
+                                </h4>
+                            </div>
+                            <div class="opcoes" id="listaOportunidades">
+                                
+                                <a title="Canal Conecta" id="canal-conecta" href="https://www.canalconecta.com.br/index?t=1" target="_blank"><!-- https://www.canalconecta.com.br/index?t=1-->
+                                    <i class="fa fa-users"></i>Canal Conecta
+                                    <i class="fa fa-question-circle js-bootstrap-tooltip" data-toggle="tooltip" data-placement="top" title="É o canal de empregabilidade do grupo Kroton Educacional. Este canal aproxima você do mercado de trabalho com diversas vagas e oportunidades."></i>
+                                </a>
+                                
+                                <div>
+                                    <span>
+                                        <a href="/curso-livre/index?matriculaId=3000411703" class="cursosLivres"><img src="/assets/somenteLogoCursoLivre-5443aadc351d60381cd404673df5ab58.png" class="cursosLivresDashboardIcon"/>Cursos Livres</a>
+                                    </span>
+
+                                    <span class="collapsed setaDropdown" aria-controls="collapseExample" aria-expanded="true" data-toggle="collapse" data-target="#collapseCursoLivre"></span>
+
+                                    <ul class="list-unstyled listaBiblioteca collapse" id="collapseCursoLivre" aria-expanded="false">
+                                        
+                                            
+                                                <li>
+                                                    <a href="https://www.cursoslivresead.com.br/administracao-do-capital-de-giro/p?" title="ADMINISTRAÇÃO DO CAPITAL DE GIRO" target="_blank">
+                                                        <i class="fa fa-external-link"></i>Administração do Capital de Giro
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="https://www.cursoslivresead.com.br/administracao-publica/p?" title="ADMINISTRAÇÃO PÚBLICA" target="_blank">
+                                                        <i class="fa fa-external-link"></i>Administração Pública
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="https://www.cursoslivresead.com.br/animacoes-em-flash/p?" title="ANIMAÇÕES EM FLASH" target="_blank">
+                                                        <i class="fa fa-external-link"></i>Animações em Flash
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="https://www.cursoslivresead.com.br/analise-de-indicadores-economicos-e-financeiros/p?" title="ANÁLISE DE INDICADORES ECONÔMICOS E FINANCEIROS" target="_blank">
+                                                        <i class="fa fa-external-link"></i>Análise de Indicadores Econômicos e Financeiros
+                                                    </a>
+                                                </li>
+                                            
+                                            <a href="/curso-livre/index?matriculaId=3000411703" class="cursosLivres"><i class="glyphicon fa-plus"></i>Todos os cursos</a>
+                                        
+                                    </ul>
+                                </div>
+                                
+                                <a href="http://www.amigovalepremio.com.br" target="_blank" title="Amigo Vale Prêmio">
+                                    <i class="fa fa-thumbs-o-up"></i>Amigo Vale Prêmio
+                                    <i class="fa fa-question-circle js-bootstrap-tooltip" data-toggle="tooltip" data-placement="top" title="É um programa no qual você pode ganhar vale-prêmios indicando amigos para estudar na mesma instituição que a sua."></i>
+                                </a>
+
+
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="tour-step-12" class="block blocosDashboard blocoNotificacoes">
+
+                            <div class="block-title"><h4>Informações Adicionais</h4></div>
+
+                            <div class="opcoes" id="listaOportunidades">
+
+                                
+
+                                
+                                    <a href="http://static.colaboraread.com.br/upload/LMS/calendario_academico/1_1_20221.pdf" target="_blank" title="Calendário Acadêmico">
+                                        <i class="fa fa-list-alt"></i>Calendário Acadêmico
+                                    </a>
+                                
+
+                                
+
+                                
+                                    <span class="dadosTutor">
+                                        <strong>Tutor à Distância:</strong>
+                                        
+                                            Vanice Dalto
+                                        
+                                    </span>
+                                    <span class="dadosTutor">
+                                        <strong>Tutor Presencial:</strong>
+                                        
+                                            Não encontrado
+                                        
+                                    </span>
+
+                                    
+                                        <span class="dadosTutor">
+                                            
+                                                <strong>Tutores de Apoio: </strong>
+                                                Não encontrado
+                                            
+                                        </span>
+
+                                    
+                                        <span class="dadosTutor">
+                                            
+                                                <strong>Tutores de Dependência(s): </strong>
+                                                Não encontrado
+                                            
+                                        </span>
+                                    
+                                    
+                                
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="modalTour" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container-fluid" style="width:90%;">
+                        <div class="row">
+                            <div class="col-sm-12" align="left">
+                                <h3><strong>Portal Digital do Aluno</strong></h3><br/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12" align="center">
+                                <iframe src="https://static.colaboraread.com.br/upload/LMS/tutorial/tutorial_web_ava_colaborar/manual_colaborar_ava.html" height="400" style="width:100%;" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" ></iframe>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12" align="center">
+                                <p style="text-align: justify;text-justify: inter-word;">
+                                    Veja como funcionará seu novo ambiente de estudos! Lembrando que o tour a seguir e o manual do Colaborar poderão ser acessados caso você precise na aba "Ajuda".
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12" align="right">
+                                <button type="button" class="btn btn-secondary tour-colaborar-btn-prx" data-dismiss="modal" onclick="atualizarDataTour()">Sair do tour</button>
+                                <button type="button" class="btn btn-primary tour-colaborar-btn-ant" onclick="startTourOfDashboard()">Começar</button>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-disabled-shortname-message" tabindex="-1" role="dialog" aria-labelledby="modal-disabled-shortname-message-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <p class="text-justify" style="padding: 10px">Essa disciplina ainda não foi liberado para estudo, você poderá acessá-la com todos os seus conteúdos após o dia 21/09. Em caso de dúvida, entre em contato com seu tutor.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - urlColacaoDigital style="width: 80%" -->
+    <div class="modal fade" id="modal-url-colacao-digital" tabindex="-1" role="dialog" aria-labelledby="modal-url-colacao-digital-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <iframe src="" style="width: 98%; height: 800px; border: none;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div id="mascaraDashBoard" class="sideMasc immutable">
+</div>
+<div id="mySidenavDashBoard" class="sidenav">
+    <div class="container-fluid paginasInternas">
+        <div style="height: 50px;">
+            <a id="tour-step-3-close" href="javascript:void(0)" class="closebtn" onclick="closeNav(1)">&times;</a>
+        </div>
+        <div class="row">
+            <div id="tour-step-4" class="col-md-12">
+                <h4><b><span id="textoDisciplina"></span></b></h4>
+            </div>
+        </div>
+        <div id="total" class="row">
+            <div id="tour-step-5" class="col-md-6 blocoConsolidado">
+                <p class="textoConsolidado"><b>Situação: </b><span id="spanSituacaoMatricula"></span></p>
+                <p class="textoConsolidado" id="textoFrequencia"><b>Frequência: </b><span id="spanFrequencia"></span></p>
+                <p class="textoConsolidado" id="textoFrequenciaAP"><b>Frequência AP: </b><span id="spanFrequenciaAP"></span></p>
+                <p class="textoConsolidado" id="textoFrequenciaCampo"><b>Frequência Campo: </b><span id="spanFrequenciaCampo"></span></p>
+                <p class="textoConsolidado"><b>Media final: </b><span id="spanMediaFinal"></span></p>
+            </div>
+            <div id="tour-step-6" class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div id="graficoGeral" class="progress-circle">
+                            <div class="divDentroDoGraficoGeral" id="dentroGraficoGeral">
+                            </div>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 center">
+                        <p id="descricaoTotal" class="descricao-media"></p>
+                        <p id="descricaoMedia" style="text-align: center;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div id="render" class="row tour-step-7">
+            <!-- RENDERIZAR DIVS -->
+        </div>
+        <hr/>
+        <div id="estagioStatus" style="display: none" class="row">
+            <div style="border-right: 1px solid #eeeeee; margin-bottom: 10px" class="col-md-6">
+                <p style="font-weight: 600; text-align: center">Documentação pedagógica</p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <div style="font-size: 14px !important;" class="progress-circle accordApproved-progress">
+                            <i class="accordApproved" aria-hidden="true" style="margin-left: 31px; z-index: 101; position: absolute; margin-top: 28px" data-toggle="tooltip" title=""></i>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px; padding-left: 25px" class="col-sm-12 col-md-8 center">
+                        <p class="accordMessage"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p style="font-weight: 600; text-align: center">Termo de aceite realizado pela equipe de estágio</p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <div style="font-size: 14px !important;" class="progress-circle center internshipApproved-progress">
+                            <i class="internshipApproved" aria-hidden="true" style="margin-left: 31px; z-index: 101; position: absolute; margin-top: 28px" data-toggle="tooltip" title=""></i>
+                            <div class="left-half-clipper">
+                                <div class="first50-bar"></div>
+                                <div class="value-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px; padding-left: 25px" class="col-sm-12 col-md-8 center">
+                        <p class="internshipMessage"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 alert alert-warning alertDashboard" id="messageDashboardDiv">
+            <span id="messageDashboardText"></span>
+            <!--<strong>Atenção!</strong> Para aprovação da disciplina, é necessário a aprovação de cadastro de convênio, alcançar a pontuação mínima do relátorio de estágio e apresentar todas as documentações acadêmicas solicitadas.-->
+        </div>
+        <div style="text-align: center" class="col-md-12">
+            
+                <button type="button" id="button-extrato-pontos" href="#" onclick="buscaExtratoPontos()" data-toggle="collapse" data-target="#extrato-pontos" class="btn botao-mostra-extrato">Mostrar Extrato</button>
+                <div class="panel panel-default panel-extrato">
+                    <div class="panel-heading">
+                        <input type="hidden" id="boletimIdExtrato" value="">
+                        <input type="hidden" id="tipoDisciplinaIdExtrato" value="">
+                        <input type="hidden" id="liberaExtrato" value="[ 1L, 2L, 3L, 6L, 10L, 11L, 13L]">
+                        <input type="hidden" id="liberaExtratoProjeto" value="38">
+                        <div id="extrato-pontos" class="panel-body panel-collapse collapse">
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    function carregaDashBoardGraficosDto(boletimId, tipoDisciplinaId) {
+        $("#boletimIdExtrato").val(boletimId);
+        $("#tipoDisciplinaIdExtrato").val(tipoDisciplinaId);
+        liberaExtratoPontos(boletimId, tipoDisciplinaId)
+
+        $.ajax({
+            url: hostname + 'dashboard/calculaPontuacaoTimeLine',
+            type: 'POST',
+            dataType: 'json',
+            async: false,
+            data: {
+                boletimId: boletimId
+            },
+            error: function () {
+                callback();
+            },
+            success: function (data) {
+                if (data[0].erro){
+                    alert('Ocorreu um erro inesperado! Tente novamente mais tarde!');
+                    closeNav(1);
+                } else {
+                    if (data[0]) {
+                        liberaFrequencias(data[0].dashBoardPontuacaoDto);
+                        mostraAlertaEstagio(data[0].dashBoardPontuacaoDto.messageAlert);
+
+                        document.getElementById("dentroGraficoGeral").innerHTML = data[0].dashBoardPontuacaoDto.iconeCadiado + '<span id="pontuacaoGeralSpan" style="margin-top: 13px"></span>';
+                        document.getElementById("descricaoTotal").textContent = data[0].dashBoardPontuacaoDto.fraseTotal;
+                        if(data[0].dashBoardPontuacaoDto.media){
+                            document.getElementById("descricaoMedia").textContent = '(Mínimo ' + data[0].dashBoardPontuacaoDto.media + ' pontos)';
+                        }
+                        document.getElementById("pontuacaoGeralSpan").textContent = data[0].dashBoardPontuacaoDto.pontuacaoTotalAlcancada;
+                        document.getElementById("textoDisciplina").textContent = data[0].dashBoardPontuacaoDto.descricaoDisciplina;
+                        document.getElementById("spanSituacaoMatricula").innerHTML = data[0].dashBoardPontuacaoDto.situacao;
+
+                        document.getElementById("graficoGeral").className = '';
+                        document.getElementById("graficoGeral").classList.add("progress-circle");
+                        document.getElementById("graficoGeral").classList.add(data[0].dashBoardPontuacaoDto.classGrafico);
+                        if (data[0].dashBoardPontuacaoDto.classCinquentaPorcento != "") {
+                            document.getElementById("graficoGeral").classList.add(data[0].dashBoardPontuacaoDto.classCinquentaPorcento);
+                        }
+
+                        document.getElementById("spanMediaFinal").textContent = data[0].dashBoardPontuacaoDto.mediaFinal;
+
+                        data[0].dashBoardPontuacaoDto.list.forEach(constroiDivs);
+                        estagioStatus(data[0].dashBoardPontuacaoDto.estagioDto);
+                        document.getElementById("mySidenavDashBoard").style.overflowY = "visible";
+                    }
+                }
+            }
+        });
+    }
+
+    function constroiDivs(item, index) {
+        var divPai = document.getElementById('render');
+        var colMdSeis = document.createElement("div");
+        colMdSeis.id = 'colMdSeis'+ item.tipoAtividadeId;
+        divPai.appendChild(colMdSeis);
+        colMdSeis.classList.add("col-md-6");
+        colMdSeis.classList.add("marginBottomDash");
+        var row01 = document.createElement("div");
+        row01.id = 'row01'+item.tipoAtividadeId;
+        colMdSeis.appendChild(row01);
+        row01.classList.add("row");
+        var colMdTres = document.createElement("div");
+        colMdTres.id = 'colMd03'+item.tipoAtividadeId;
+        row01.appendChild(colMdTres);
+        colMdTres.classList.add("col-md-3");
+        var redondo = document.createElement("div");
+        redondo.id = 'redondo'+item.tipoAtividadeId;
+        colMdTres.appendChild(redondo);
+        redondo.classList.add("redondo");
+        redondo.classList.add(item.ajustePosicao);
+        redondo.innerHTML = item.cadiado + "<p>" + item.pontuacaoAlcancada + "</p>";
+        var colMdNove = document.createElement("div");
+        colMdNove.id = 'colMd09'+item.tipoAtividadeId;
+        row01.appendChild(colMdNove);
+        colMdNove.classList.add("col-md-9");
+        var row02 = document.createElement("div");
+        row02.id = 'row02'+item.tipoAtividadeId;
+        colMdNove.appendChild(row02);
+        row02.classList.add("row");
+        var colMdDoze = document.createElement("div");
+        colMdDoze.id = 'colMd12'+item.tipoAtividadeId;
+        row02.appendChild(colMdDoze);
+        colMdDoze.classList.add("col-md-12");
+        var titulo = document.createElement("b");
+        titulo.id = 'titulo'+item.tipoAtividadeId;
+        colMdDoze.appendChild(titulo);
+        titulo.innerHTML = item.titulo;
+        var barra = document.createElement("div");
+        barra.id = 'barra'+item.tipoAtividadeId;
+        colMdDoze.appendChild(barra);
+        barra.classList.add("progress");
+        barra.classList.add("barra-formatacao");
+        var barraConteudo = document.createElement("div");
+        barraConteudo.id = 'barraConteudo'+item.tipoAtividadeId;
+        barra.appendChild(barraConteudo);
+        barraConteudo.classList.add("progress-bar");
+
+        var porcentagemAlcancada = item.porcetagemAlcancada;
+
+        if (item.pontuacaoMinima > 0 && (item.pontuacaoAlcancada > item.pontuacaoMinima)){
+            barraConteudo.classList.add("progress-bar-warning");
+        } else {
+            barraConteudo.classList.add("progress-bar-success");
+        }
+
+        barraConteudo.style.width = porcentagemAlcancada + '%';
+        var subTitulo = document.createElement("p");
+        colMdDoze.appendChild(subTitulo);
+        subTitulo.innerHTML = item.subTitulo;
+    }
+
+    function liberaFrequencias(dashBoardPontuacaoDto){
+        document.getElementById("textoFrequencia").style.display = "none";
+        document.getElementById("textoFrequenciaAP").style.display = "none";
+        document.getElementById("textoFrequenciaCampo").style.display = "none";
+
+        if (dashBoardPontuacaoDto.possuiFrequenciaTeorica){
+            var txtMinimo = (dashBoardPontuacaoDto.minimumFrequencyTA > 0) ? "% (Mínimo " + dashBoardPontuacaoDto.minimumFrequencyTA + "%)" : "";
+            document.getElementById("spanFrequencia").textContent = dashBoardPontuacaoDto.porcentagemFrequenciaTA + txtMinimo;
+            document.getElementById("textoFrequencia").style.display = "block";
+        }
+
+        if (dashBoardPontuacaoDto.possuiFrequenciaPratica){
+            var txtMinimo = (dashBoardPontuacaoDto.mininumFrequencyPractice > 0) ? "% (Mínimo " + dashBoardPontuacaoDto.mininumFrequencyPractice + "%)" : "";
+            document.getElementById("spanFrequenciaAP").textContent = dashBoardPontuacaoDto.porcentagemFrequenciaAP + txtMinimo;
+            document.getElementById("textoFrequenciaAP").style.display = "block";
+        }
+
+        if (dashBoardPontuacaoDto.possuiFrequenciaCampo){
+            var txtMinimo = (dashBoardPontuacaoDto.minimumFrequencyField > 0) ? "% (Mínimo " + dashBoardPontuacaoDto.minimumFrequencyField + "%)" : "";
+            document.getElementById("spanFrequenciaCampo").textContent = dashBoardPontuacaoDto.porcentagemFrequenciaCampo + txtMinimo;
+            document.getElementById("textoFrequenciaCampo").style.display = "block";
+        }
+    }
+
+    function mostraAlertaEstagio(messageAlert) {
+        if (messageAlert) {
+            document.getElementById("messageDashboardText").innerHTML = messageAlert;
+            document.getElementById("messageDashboardDiv").style.display = "block";
+        } else {
+            document.getElementById("messageDashboardDiv").style.display = "none";
+        }
+    }
+
+    function estagioStatus(internshipStatus) {
+        if (internshipStatus) {
+            $('#estagioStatus').show()
+            $('.accordApproved').addClass(internshipStatus.accordApproved ? 'fa-unlock-alt' : 'fa fa-lock')
+            $('.accordApproved-progress').addClass(internshipStatus.accordApproved ? 'over50 p100' : '')
+            $('.accordMessage').html(internshipStatus.accordMessage)
+            $('.internshipApproved').addClass(internshipStatus.internshipApproved ? 'fa-unlock-alt' : 'fa fa-lock')
+            $('.internshipApproved-progress').addClass(internshipStatus.internshipApproved ? 'over50 p100' : '')
+            $('.internshipMessage').html(internshipStatus.internshipMessage)
+        } else {
+            $('#estagioStatus').hide()
+        }
+    }
+
+    function buscaExtratoPontos() {
+        if ($("#extrato-pontos")[0].children.length > 0) {
+            return;
+        }
+
+        $.ajax({
+            url: hostname + 'dashboard/buscaExtratoPontuacao',
+            type: 'POST',
+            dataType: 'json',
+            async: false,
+            data: {
+                boletimId: $("#boletimIdExtrato").val()
+            },
+            error: function () {
+                callback();
+            },
+            success: function (dados) {
+                if (dados.length > 0) {
+                    constroiExtratoPontos(dados)
+                }
+            }
+        });
+    }
+
+    function constroiExtratoPontos(dados) {
+        var extratoPontosHtml = "";
+
+        dados.forEach(function (eventType, index) {
+            extratoPontosHtml += constroiEventAlias(eventType)
+            extratoPontosHtml += constroiMenssagePoints(eventType)
+            extratoPontosHtml += constroiEvents(eventType)
+        })
+
+        $("#extrato-pontos").append(extratoPontosHtml)
+    }
+
+    function constroiEventAlias(eventType) {
+        return '<h4 class="h4-titulo">'+ eventType.eventAlias +'</h4>'
+    }
+
+    function constroiMenssagePoints(eventType) {
+        if (eventType.messagePoints) {
+            return '<h5 class="h5-titulo">'+ eventType.messagePoints +'</h5>'
+        }
+
+        return ""
+    }
+
+    function constroiEvents(eventType) {
+        var htmlEvent = constroiTdTabela(eventType)
+
+        return '<table class="table">' +
+                '<thead>' +
+                    '<tr>' +
+                        '<th style="border-bottom: none !important;" scope="col">'+ eventType.eventAlias +'</th>' +
+                        '<th style="border-bottom: none !important;" scope="col">Pontuação</th>' +
+                    '</tr>' +
+                '</thead>' +
+                '<tbody>'
+                    + htmlEvent +
+                '</tbody>' +
+            '</table>'
+    }
+
+    function constroiTdTabela(eventType) {
+        var htmlEvent = ""
+        eventType.events.forEach(function(event, index) {
+            htmlEvent += '<tr>' +
+                '<td style="text-align: left; width: 700px; border-top: none !important">'+ event.name +'</td>' +
+                '<td style="text-align: left; border-top: none !important">'+ event.score +'</td>' +
+                '</tr>'
+        })
+
+        return htmlEvent
+    }
+
+    function habilitaExtratoPontosPorTipoDisciplinaId(tipoDisciplinaId) {
+        var liberaExtrato = false
+        $("#liberaExtrato").val().toString().replace('[', '').replace(']', '').split(',').forEach(function(tipoDisciplinaIdArray, index) {
+            if (tipoDisciplinaIdArray == (" " + tipoDisciplinaId + "L")) {
+                liberaExtrato = true;
+            }
+        })
+
+        if (!liberaExtrato) {
+            $("#button-extrato-pontos").hide()
+        } else {
+            $("#button-extrato-pontos").show()
+        }
+    }
+
+    function habilitaExtratoPontosPorProjeto(boletimId, tipoDisciplinaId) {
+        $.ajax({
+            url: hostname + 'dashboard/buscaProjetoPorBoletim',
+            type: 'POST',
+            dataType: 'json',
+            async: false,
+            data: {
+                boletimId: boletimId
+            },
+            error: function () {
+                callback();
+            },
+            success: function (data) {
+                if (data && data == '0') {
+                    $("#button-extrato-pontos").hide()
+                }
+
+                if (data && data >= $("#liberaExtratoProjeto").val()) {
+                    habilitaExtratoPontosPorTipoDisciplinaId(tipoDisciplinaId)
+                } else {
+                    $("#button-extrato-pontos").hide()
+                }
+            }
+        });
+    }
+
+    function liberaExtratoPontos(boletimId, tipoDisciplinaId) {
+        habilitaExtratoPontosPorProjeto(boletimId, tipoDisciplinaId);
+    }
+</script>
+<style>
+    .h4-titulo {
+        text-align: left;
+        font-weight: 600;
+        color: #0185cd;
+    }
+
+    .h5-titulo {
+        padding-left: 8px;
+        text-align: left;
+        font-weight: 700;
+    }
+
+    .botao-mostra-extrato {
+        width: 195px;
+        height: 45px;
+        font-size: 15px;
+        border-radius: 6px;
+        background: white;
+        color: #0185cd;
+        border-color: #0185cd;
+        font-weight: 600;
+    }
+
+    .botao-mostra-extrato:hover {
+        color: #0185cd;
+    }
+
+    .botao-mostra-extrato:focus {
+        color: #0185cd;
+    }
+
+    row:before {
+        content: none;
+    }
+
+    .panel-extrato {
+        border-color: transparent !important;
+    }
+
+</style>
+<div id="mascaraExtrato" class="sideMasc immutable">
+</div>
+<div id="mySidenavExtrato" class="sidenav">
+    <div class="container-fluid paginasInternas">
+        <div style="height: 50px;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav(2)">&times;</a>
+        </div>
+        <div class="row" style="margin-top: 25px;">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">Disciplina</div>
+                </div>
+                <div class="row" style="margin-top: 5px;">
+                    <div class="col-md-12">
+                        <b id="nomeDisciplina"></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 25px;">
+            <div class="col-md-12 text-center" style="font-size: 17px;" >
+                Extrato Detalhado de Pontos
+            </div>
+        </div>
+<script>
+    function carregaExtratoPontuacaoDto(matriculaId, ofertaDisciplinaId, nomeDisciplina){
+        $.ajax({
+            url: hostname + 'dashboard/calculaPontuacaoExtrato',
+            type: 'POST',
+            dataType: 'json',
+            async: false,
+            data: {
+                matriculaId: matriculaId,
+                ofertaDisciplinaParam: ofertaDisciplinaId
+            },
+            error: function () {
+                callback();
+            },
+            success: function (data) {
+                if (data[0].listExtratoDto) {
+                    constroiHtmlExtratoPontuacao(data[0].listExtratoDto, nomeDisciplina);
+                } else {
+                  alert(data[0].errorMessage);
+                }
+            }
+        });
+    }
+    function constroiHtmlExtratoPontuacao(listPontuacao, nomeDisciplina){
+        var nomeDaDisciplina = document.getElementById("nomeDisciplina");
+        nomeDaDisciplina.innerHTML = nomeDisciplina;
+        //Gerar Html para construção da página
+        var tableDetalheAtividades = document.getElementById("innerTableAtividades");
+        tableDetalheAtividades.innerHTML = '';
+        for(var i = 0; i < listPontuacao.length; i++){
+            var tableNova = document.createElement("table");
+            tableNova.classList.add("table");
+            var thead = document.createElement("thead");
+            var tr = document.createElement("tr");
+            var th = document.createElement("th");
+            var thTexto = document.createTextNode(listPontuacao[i].descricaoTipoAtividade);
+            th.appendChild(thTexto);
+            tr.appendChild(th);
+            thead.appendChild(tr);
+            var list = listPontuacao[i].list;
+            var tbody = document.createElement("tbody");
+            if(list){
+                var trAtividade
+                for (var l = 0; l < list.length; l++){
+                    trAtividade = document.createElement("tr");
+                    var tdDescricao = document.createElement("td");
+                    var textoAtividade = (list[l].descricaoAtividade);
+                    if(list[l].tipoAtividade == 16 && list[l].cicloForum == 2){
+                        textoAtividade += " - Você teve " + list[l].quantidadeLike + " Likes";
+                    }
+                    var tdDescricaoTexto = document.createTextNode(textoAtividade);
+                    tdDescricao.setAttribute("width", 60+'%');
+                    tdDescricao.appendChild(tdDescricaoTexto);
+                    var tdPontos = document.createElement("td");
+                    var tdPontosAlcancados = document.createElement("td");
+                    var tdDescricaoPontos
+                    var tdDescricaoPontosAlcancadas
+                    tdPontos.width = 15+"%";
+                    tdPontos.align = "center";
+                    tdPontosAlcancados.width = 15+"%";
+                    tdPontosAlcancados.align = "center";
+                    var valor1, valor2
+                    valor1 = list[l].pontuacaoTotalPossivel;
+                    valor2 = list[l].pontuacaoAlcancada;
+                    tdDescricaoPontos = document.createTextNode(valor1);
+                    tdDescricaoPontosAlcancadas = document.createTextNode(valor2);
+                    tdPontos.appendChild(tdDescricaoPontos);
+                    tdPontosAlcancados.appendChild(tdDescricaoPontosAlcancadas);
+                    trAtividade.appendChild(tdDescricao);
+                    trAtividade.appendChild(tdPontos);
+                    trAtividade.appendChild(tdPontosAlcancados);
+                    tbody.appendChild(trAtividade);
+                    if(list[l].pontuacaoTotalApresentacao != null && list[l].pontuacaoTotalApresentacao > 0){
+                        trAtividade = document.createElement("tr");
+                        tdDescricao = document.createElement("td");
+                        tdDescricaoTexto = document.createTextNode("APRESENTAÇÃO DE " + list[l].descricaoAtividade);
+                        tdDescricao.setAttribute("width", 60+'%');
+                        tdPontos = document.createElement("td");
+                        tdDescricaoPontos = document.createTextNode(list[l].pontuacaoTotalApresentacao);
+                        tdPontos.width = 15+"%";
+                        tdPontos.align = "center";
+                        tdPontosAlcancados = document.createElement("td");
+                        tdDescricaoPontosAlcancadas = document.createTextNode(list[l].pontuacaoAlcancadaApresentacao);
+                        tdPontosAlcancados.width = 15+"%";
+                        tdPontosAlcancados.align = "center";
+                        tdDescricao.appendChild(tdDescricaoTexto);
+                        tdPontos.appendChild(tdDescricaoPontos);
+                        tdPontosAlcancados.appendChild(tdDescricaoPontosAlcancadas);
+                        trAtividade.appendChild(tdDescricao);
+                        trAtividade.appendChild(tdPontos);
+                        trAtividade.appendChild(tdPontosAlcancados);
+                        tbody.appendChild(trAtividade);
+                    }
+                    console.log(list[l].pontuacaoTotalApresentacao);
+                }
+                tableNova.appendChild(thead);
+                tableNova.appendChild(tbody);
+                tableDetalheAtividades.appendChild(tableNova);
+            }
+        }
+    }
+</script>
+
+
+
+
+    <form id="pearsonaccess" action="https://biblioteca-virtual.com/detalhes/parceiros/9" method="post" target="result">
+        <input name="login" id="login" type="hidden" value="ead23152200" />
+        <input name="token" id="token" type="hidden" value="aedd48a38135d7a837b7e1fc1ac1850a" />
+    </form>
+
+
+
+<script>
+    $(document).ready(function() {
+        $('.tab-content .tab-pane:first, .nav-tabs .navbar-link:first').addClass('active');
+
+        popupAva();
+        var $btnAnteriores = $('.js-btn-anteriores');
+
+        if ( ! $btnAnteriores.find('li').length ){
+            $btnAnteriores.remove();
+        }
+
+        $('[data-toggle="tooltip"]').tooltip();
+
+        initTour();
+
+        
+    });
+
+    $('.js-active-atividades').on('click', function (e) {
+        e.preventDefault();
+        var boletimId = $(this).data("boletimId");
+        var element$ = $('#list-atividades-'+boletimId);
+
+        var loaded = element$.attr('is-loaded');
+
+        if(loaded == 0){
+            e.stopImmediatePropagation();
+            var id = '3000411703';
+
+            $.ajax({
+                url: "/aluno/dashboard/listAtividades",
+                data:{id: id,
+                    boletimId: boletimId},
+                success: function(result){
+                    if(result.error){
+                        $('#atividades-' + boletimId).html('<li class="list-line-interna"><p class="text-muted">' + result.error + '</p></li>');
+                        element$.attr('is-loaded','1');
+                        element$.click();
+                    }else{
+                        $('#atividades-' + boletimId).html(result);
+                        element$.attr('is-loaded','1');
+                        element$.click();
+                    }
+                    if(!tour.ended()) {
+                        $('a').each(function() { 
+                            var $this = $(this),
+                            aHref = $this.attr('href');
+                            $this.attr('href', '#');
+                        });
+                    }
+                },
+                error: function(result){
+                    return;
+                }
+            });
+        }
+
+    });
+
+    $('#termochk').change(function() {
+        if($(this).is(":checked")) {
+            $("#btnProsseguir").prop("disabled", false);
+        } else {
+            $("#btnProsseguir").prop("disabled", true);
+        }
+    });
+
+    var popupList = [];
+    $('.js-popup-item').each(function(){
+        if ($(this).children()[0].innerText) {
+            popupList.push({id: $(this).attr('id'), urlApi: $(this).children()[0].innerText})
+        } else {
+            popupList.push({id: $(this).attr('id')})
+        }
+    });
+
+    // Função para ativação de Banners no Dashboard - alterado em 10/2020
+    // ThreadPool alterou a condição If para result.aluno();
+    function popupAva() {
+        if (popupList.length > 0) {
+            if (popupList[0].urlApi) {
+                $.ajax({
+                    method: 'GET',
+                    url: popupList[0].urlApi + '30004117',
+                    async: true,
+                    success: function(result, textStatus, xhr) {
+                        var popupId = popupList[0].id.replace('popup-', '');
+
+                        if (result) {
+                            if (result.elegivel && (!result.respondeu && !result.finalizou  || result.respondeu && !result.finalizou) ) {
+                                openModal(popupList[0].id, popupList);
+
+                            } else if (result.respondeu && result.finalizou) {
+                                $.ajax({
+                                    method: 'POST',
+                                    url: '/matriculaPopupAvaliar/save',
+                                    data: {matriculaId: '3000411703', popupId: popupId, finalizou: result.finalizou },
+                                    async: true
+                                })
+                                updatePopupList(popupList);
+                            } else if(result.aluno){
+                                if ((result.aluno.hasOwnProperty('bannerDegustacaoAva') && result.aluno.bannerDegustacaoAva == null) &&
+                                    (result.aluno.hasOwnProperty('degustacao') && result.aluno.degustacao == 'ELEGIVEL')) {
+                                    openModal(popupList[0].id, popupList);
+                                } else {
+                                    updatePopupList(popupList);
+                                }
+                            } else {
+                                updatePopupList(popupList);
+                            }
+                        } else {
+                            updatePopupList(popupList)
+                        }
+                    },
+                    timeout: 1000
+                });
+            } else {
+                openModal(popupList[0].id, popupList)
+            }
+
+        }  else {
+            var urlX = "";
+            if (urlX != '') {
+                window.location.href = window.location.protocol + "//" + window.location.host + "";
+            }
+        }
+    }
+
+
+    function updatePopupList(popupList)
+    {
+        popupList.shift();
+        return popupAva();
+    }
+
+    function openModal(popupId, popupList) {
+        $.magnificPopup.open({
+            items: {
+                src: "#" + popupId,
+                type: "inline"
+            },
+            closeBtnInside: false,
+            mainClass: 'mfp-inline-popup',
+            callbacks: {
+                open: function() {
+                    popupList.shift();
+
+                },
+                afterClose: function() {
+                    popupAva();
+                }
+            }
+        });
+    }
+
+
+    //Chamado pelo _popup Degustação.
+    function atualizarDecisaoAlunoPopup(decisao, popupId, matriculaId, urlAceite) {
+
+        var parametros = JSON.stringify({
+            "aceiteBannerDegustacao": decisao,
+            "matriculaId": matriculaId
+        });
+
+        $.ajax({
+            url: urlAceite,
+            async: true,
+            data: parametros,
+            method: "POST",
+            contentType: "application/json",
+            success: function(result){
+                $.magnificPopup.close();
+                if(result.error){
+                    $('#info-degustacao-span').text("Não foi possível processar a sua solicitação, mas fique tranquilo (a), você poderá responder quando voltar a esta página.");
+                    $('#info-degustacao').show();
+                }else{
+                    if (decisao) {
+                        $('#info-degustacao-span').text("Olá, sua solicitação foi registrada com sucesso, em breve um de nossos consultores entrará em contato com maiores informações.");
+                    } else {
+                        $('#info-degustacao-span').text("Obrigado, não iremos mais exibir essa mensagem.");
+                    }
+                    $('#info-degustacao').show();
+                }
+                
+            },
+            error: function(result){
+                console.log('Problema ao consumir o endpoint de atualização do aceite');
+                console.log(result);
+                $.magnificPopup.close();
+                $('#info-degustacao-span').text("Não foi possível processar a sua solicitação, mas fique tranquilo (a), você poderá responder quando voltar a esta página.");
+                $('#info-degustacao').show();
+            }
+        });
+    }
+
+    function janelaSecundaria(c){
+        window.open(c,"Chat","width=400,height=500,scrollbars=NO")
+    }
+
+    function janelaSecundaria(c){
+        window.open(c,"Chat","width=400,height=500,scrollbars=NO")
+    }
+
+    $('#canal-conecta').mousedown(function(e){
+        if (e.which == 1 || e.which == 2 ) {
+            $.ajax({url: "/aluno/dashboard/acessoCanalConecta", method: 'post', async: true, data: {} });
+        }
+    });
+
+
+    function openNav(boletimId, ofertaDisciplinaId, matriculaId, dados, nome, tipoDisciplinaId) {
+        if (dados == 1) {
+            document.getElementById("render").innerHTML = "";
+            document.getElementById("mySidenavDashBoard").style.width = "60%";
+            document.getElementById("mascaraDashBoard").style.width = "40%";
+            document.getElementById("mascaraDashBoard").style.backgroundColor = "rgba(0,0,0,0.4)";
+            carregaDashBoardGraficosDto(boletimId, tipoDisciplinaId);
+        } else {
+            document.getElementById("mySidenavExtrato").style.overflowY = "visible";
+            document.getElementById("render").innerHTML = "";
+            document.getElementById("mySidenavExtrato").style.width = "60%";
+            document.getElementById("mascaraExtrato").style.width = "40%";
+            document.getElementById("mascaraExtrato").style.backgroundColor = "rgba(0,0,0,0.4)";
+            carregaExtratoPontuacaoDto(matriculaId, ofertaDisciplinaId, nome);
+        }
+    }
+
+    function closeNav(dados) {
+        if (dados == 1) {
+            document.getElementById("mySidenavDashBoard").style.width = "0";
+            document.getElementById("mascaraDashBoard").style.width = "0";
+            document.body.style.backgroundColor = "white";
+
+            document.getElementById("mySidenavDashBoard").style.overflowY = "hidden";
+        } else {
+            document.getElementById("mySidenavExtrato").style.width = "0";
+            document.getElementById("mascaraExtrato").style.width = "0";
+            document.body.style.backgroundColor = "white";
+
+            document.getElementById("mySidenavExtrato").style.overflowY = "hidden";
+        }
+        fechaCollapseExtratoPontos()
+        limpaExtratoPontosNovo()
+    }
+
+    function limpaExtratoPontosNovo() {
+        $("#extrato-pontos").html("")
+    }
+    
+    function fechaCollapseExtratoPontos() {
+        if ($("#extrato-pontos")[0].className.indexOf('in') !== -1) {
+            $("#extrato-pontos").collapse('toggle')
+        }
+    }
+
+    function acessarLivro(isbn) {
+        windows.open('https://biblioteca-virtual.com/detalhes/parceiros/9');
+    }
+
+    function showModalTour(msg) {
+        $('#modalTour').modal('show');
+        if(msg === 'forceTour') {
+            window.localStorage.removeItem('tour_end');
+        }
+    }
+
+    function atualizarDataTour() {
+        var id = '12915178';
+        window.localStorage.setItem('tour_end', 'yes');
+
+        $.ajax({
+            url: "/aluno/dashboard/tourVirtual",
+            data:{id: id},
+            success: function(result){
+                location.reload();
+            },
+            error: function(result){
+                console.log('error', result);
+            }
+        });
+    }
+
+    function initTour() {
+        
+            createStepsForDashboard(false);
+        
+        
+            window.localStorage.setItem('tour_end', 'yes');
+        
+        if(!tour.ended()) {
+            showModalTour('');
+        }
+    }
+    
+</script>
+
+            </main>
+            <div id="divCookies" class="cookies">
+                 <p>
+                    Esse site utiliza cookies para oferecer uma melhor experiência de navegação,
+                    alisar como você interage em nosso site, otimizar o desempenho e personalizar o conteúdo.
+                    Ao utilizar este site, você concorda com o uso de cookies. Saiba mais em nosso <a id="portalPrivacidade" target="_blank" href="https://www.canaldatransparencia.com.br/cogna/">Portal de Privacidade</a>.
+                 </p>
+                 <button id="btnCookiesUser" class="classBtnCookies">Ok</button>
+
+               </div>
+               <script>
+               function verificaCookies() {
+
+                               if(sessionStorage.getItem("verificacookies") === null){
+                                   sessionStorage.setItem("verificacookies","false");
+                               }
+
+                               if(sessionStorage.getItem("verificacookies") === "true"){
+                                   $('#divCookies').addClass('escondeDivCookies');
+                                   $('#divCookies').removeClass('mostraDivCookies');
+                               }
+                          }
+                       $('#btnCookiesUser').on('click', function () {
+                           $('#divCookies').addClass('escondeDivCookies');
+                           $('#divCookies').removeClass('mostraDivCookies');
+                           sessionStorage.setItem("verificacookies","true");
+                       });
+
+                       window.onload = verificaCookies();
+
+
+               </script>
+
+        </div>
+
+        <!-- <footer id="footerNovo">
+                <a href="https://www.facebook.com/unoparuniversidade" target="_blank">
+                    <img src="/assets/icoFacebook-149d4a439e903c060cf3b091a35a428a.png" alt="Facebook">
+                </a>
+                <a href="https://www.youtube.com/channel/UCTziF60jYcTrxdhF39VMt6g" target="_blank">
+                    <img src="/assets/icoYoutube-feb89f52fe63e3ae0d85d41c63913dec.png" alt="Youtube">
+                </a>
+                <a href="https://twitter.com/UNOPAR_Oficial" target="_blank">
+                    <img src="/assets/icoTwitter-6b3c3e2f6b8301eaba5ad722611aafa7.png" alt="Twitter">
+                </a>
+            </footer>
+
+            <footer id="footer" class="page-footer">
+            	<h6 class="pull-left no-margin">Colaborar </h6>
+                <h6 class="copyright pull-right no-margin">&copy; 2004-2017 Unopar</h6>
+                
+            </footer> -->
+
+    </div>
+
+            <div id="js-mfp-alert" class="white-popup mfp-hide">
+        <div class="modal-header">
+            <h3 class="modal-title">Confirmar</h3>
+        </div>
+
+        <div class="modal-body">
+            <p>Deseja realmente realizar esta operação</p>
+        </div>
+
+        <div class="modal-footer">
+            <a href="#" class="btn btn-default js-mfp-dismiss" title="Cancelar">Cancelar</a>
+            <a href="#" class="btn btn-primary js-mfp-confirm" title="Confirmar">Confirmar</a>
+        </div>
+    </div>
+    
+
+    <!--[if lt IE 9]><img src="/assets/bg-449915540124d7cb95dff44784041a81.jpg" class="bg-ie"/><![endif]-->
+    <script>
+        var divContas = $('#divContas');
+
+        $('#form-alternar').submit(function (e) {
+            e.preventDefault();
+        });
+
+        function desabilitaBtnForm() {
+            $('#btn-submit-alternar').addClass('disabled');
+        }
+
+        function habilitaBtnForm() {
+            $('.js-input-username').on('click', function () {
+                $('#btn-submit-alternar').removeClass('disabled');
+            });
+        }
+
+        $('#btn-submit-alternar').on('click', function () {
+            $('#form-submit-alternar').submit();
+        });
+
+        $('#btnAlternar').on('click', function () {
+            desabilitaBtnForm();
+            var conta = $('#usernameSwitch').val();
+            limparCampoContas();
+            if (!conta.length || conta.length < 3) {
+                setTimeout(function () {
+                    aparecerCampoContas("Por favor, insira pelo menos 3 caracteres para realizar a pesquisa.", "alert-warning");
+                }, 300);
+                return;
+            }
+
+            $.ajax({
+                url: '/usuario/getContaSwitchUser',
+                type: 'GET',
+                dataType: 'json',
+                async: true,
+                data: {conta: conta},
+                error: function () {
+                    setTimeout(function () {
+                        aparecerCampoContas("Algo deu errado, tente novamente.", "alert-warning");
+                    }, 300);
+                },
+                success: function (result) {
+                    if (result.length > 0) {
+
+                        divContas.append("<h4>Contas:</h4>");
+                        for (let i = 0; i < result.length; i++) {
+                            constroiTabelaContas(result[i]);
+                        }
+                        habilitaBtnForm();
+                        divContas.attr('role', 'alert');
+                        divContas.addClass("alert");
+                        divContas.addClass("alert-success");
+                        divContas.fadeIn(450);
+                    } else {
+                        setTimeout(function () {
+                            aparecerCampoContas("Nenhuma conta encontrada.", "alert-warning");
+                        }, 300);
+                    }
+                }
+            });
+        });
+
+        function constroiTabelaContas(item) {
+            divContas.append("<li class='radio'><label for='" + item.conta + "'><input type='radio' class='js-input-username' name='username' id=" + item.conta + " value='" + item.conta + "'>" + item.conta + "</label></li>");
+        }
+
+        function aparecerCampoContas(text, classe) {
+            divContas.attr('role', 'alert');
+            divContas.addClass(classe);
+            divContas.html(text);
+            divContas.fadeIn(450);
+        }
+
+        function limparCampoContas() {
+            divContas.fadeOut(450);
+            divContas.removeClass('alert-warning');
+            divContas.removeClass('alert-success');
+            divContas.html('');
+        }
+
+        function getUsuarios(conta) {
+            console.log("OnChange");
+            if (!conta.length || conta.length < 3) return callback();
+
+        }
+    </script>
+    
+    <script >
+        $(function(){
+           $('.js-mfp-ajax').magnificPopup({
+               closeOnContentClick: false,
+               removalDelay: 300,
+               type: 'ajax',
+               closeBtnInside: false,
+               ajax: {
+                   settings: {dataType: "html"}
+               },
+               callbacks: {
+                   parseAjax: function(mfpResponse) {
+                       mfpResponse.data = $(mfpResponse.data).find('#content');
+                   }
+               }
+           });
+        });
+
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-3158698-61', 'auto');
+       ga('send', 'pageview');
+        
+            ga('set','userId', '102964280-ead23152200' );
+            ga('send', 'event', 'authentication', 'user-id 102964280');
+        
+
+    </script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/respond-6fad4e96a2e163b31007a749b405cba9.js" ></script>
+			<link href="/assets/respond-proxy-3f681d612462c29d29e1816fae51f0de.html" id="respond-proxy" rel="respond-proxy" />
+			<link href="/images/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+			<script src="/js/respond.proxy.js"></script>
+		<![endif]-->
+
+    <a href="#acessibilidade" class="retornaTopo" title="Retornar ao topo">Retornar ao topo</a>
+    </body>
+
+
+<script>
+    
+
+     
+
+    function limparTodos() {
+        $('#listaManuaisDinamico > li ').each(function () {
+            this.remove();
+        });
+    }
+
+    function populaMateriais(data) {
+        $.each(data.listaMateriais, function (key, val) {
+
+            var ul = document.getElementById("listaManuaisDinamico");
+            var li = document.createElement("li");
+            var a = document.createElement("a");
+            var text = document.createTextNode(val.descricao);
+            a.setAttribute("href", val.valor);
+            a.setAttribute("target", '_blank');
+            a.appendChild(text);
+            li.appendChild(a);
+            ul.appendChild(li);
+        });
+    }
+
+    function checkDashboard() {
+        if(window.location.href.indexOf('dashboard') > 0) {
+            showModalTour('forceTour');
+        } else {
+            alert('Para iniciar o Tour Virtual, acesse o curso desejado e clique novamente neste menu.');
+        }
+    }
+</script>
+
+</html>
